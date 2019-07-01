@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+        "projectName": "Project.Common",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+        "projectName": "Project.DAL",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj",
+        "projectName": "Project.Model.Common",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj",
+        "projectName": "Project.Model",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj",
+        "projectName": "Project.Repository.Common",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj",
+        "projectName": "Project.Repository",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj",
+        "projectName": "Project.Service.Common",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj",
+        "projectName": "Project.Service",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+        "projectName": "Project.WebAPI",
+        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj"
+              },
+              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj": {
+                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

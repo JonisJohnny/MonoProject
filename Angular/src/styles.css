@@ -1,0 +1,18 @@
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+.col-6
+{
+    padding: 20px;
+ 
+}
+a {
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .mat-radio-button
+  {
+      margin-top: 5px;
+  }

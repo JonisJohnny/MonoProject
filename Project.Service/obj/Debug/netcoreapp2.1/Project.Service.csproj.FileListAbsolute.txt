@@ -1,0 +1,52 @@
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csprojAssemblyReference.cache
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CoreCompileInputs.cache
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfoInputs.cache
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfo.cs
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.deps.json
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.dll
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.pdb
+D:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CopyComplete
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.dll
+D:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.deps.json
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csprojAssemblyReference.cache
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CoreCompileInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfoInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfo.cs
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CopyComplete
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.pdb
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.deps.json
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csprojAssemblyReference.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CoreCompileInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfoInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.AssemblyInfo.cs
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.csproj.CopyComplete
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/Debug/netcoreapp2.1/Project.Service.pdb

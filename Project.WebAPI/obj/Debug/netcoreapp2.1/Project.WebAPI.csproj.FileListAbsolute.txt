@@ -1,0 +1,91 @@
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.deps.json
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.json
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.dev.json
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csprojAssemblyReference.cache
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CoreCompileInputs.cache
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cache
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cs
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfoInputs.cache
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfo.cs
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorTargetAssemblyInfo.cache
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.dll
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+D:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.deps.json
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.json
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.dev.json
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csprojAssemblyReference.cache
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CoreCompileInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cache
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cs
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfoInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfo.cs
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorTargetAssemblyInfo.cache
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.deps.json
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.json
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.dev.json
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csprojAssemblyReference.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CoreCompileInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cs
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfoInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfo.cs
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorTargetAssemblyInfo.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb

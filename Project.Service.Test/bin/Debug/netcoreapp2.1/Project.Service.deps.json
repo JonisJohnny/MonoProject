@@ -1,0 +1,111 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "5590d762111b2a34f62ddcd82163c1862ccc70f0"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Project.Service/1.0.0": {
+        "dependencies": {
+          "PagedList.Mvc": "4.5.0",
+          "Project.Common": "1.0.0",
+          "Project.Model.Common": "1.0.0",
+          "Project.Repository.Common": "1.0.0",
+          "Project.Service.Common": "1.0.0"
+        },
+        "runtime": {
+          "Project.Service.dll": {}
+        }
+      },
+      "PagedList/1.17.0": {
+        "runtime": {
+          "lib/net40/PagedList.dll": {
+            "assemblyVersion": "1.17.0.0",
+            "fileVersion": "1.17.0.0"
+          }
+        }
+      },
+      "PagedList.Mvc/4.5.0": {
+        "dependencies": {
+          "PagedList": "1.17.0"
+        },
+        "runtime": {
+          "lib/net40/PagedList.Mvc.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          }
+        }
+      },
+      "Project.Common/1.0.0": {
+        "runtime": {
+          "Project.Common.dll": {}
+        }
+      },
+      "Project.Model.Common/1.0.0": {
+        "runtime": {
+          "Project.Model.Common.dll": {}
+        }
+      },
+      "Project.Repository.Common/1.0.0": {
+        "dependencies": {
+          "Project.Common": "1.0.0",
+          "Project.Model.Common": "1.0.0"
+        },
+        "runtime": {
+          "Project.Repository.Common.dll": {}
+        }
+      },
+      "Project.Service.Common/1.0.0": {
+        "dependencies": {
+          "Project.Common": "1.0.0",
+          "Project.Model.Common": "1.0.0"
+        },
+        "runtime": {
+          "Project.Service.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PagedList/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ou6F3WKXh49hOo0TxWM+SkIGuKllYPuPPvnSYOlQ1sTrtuEyuDUhYbSJd5Sdb06i/sWUJZTjiUecEs3Ht/Hx3g==",
+      "path": "pagedlist/1.17.0",
+      "hashPath": "pagedlist.1.17.0.nupkg.sha512"
+    },
+    "PagedList.Mvc/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0M4qW2g4a9cwG8ozIKUnJheCrm5GpFTceqUl63AXWaAVnTgk+TysZYUOGMsBRuzid8aF+/E8b0bXM6+90jiEw==",
+      "path": "pagedlist.mvc/4.5.0",
+      "hashPath": "pagedlist.mvc.4.5.0.nupkg.sha512"
+    },
+    "Project.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Project.Model.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Project.Repository.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Project.Service.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

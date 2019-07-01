@@ -1,0 +1,18 @@
+E:/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.deps.json
+E:/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.pdb
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csprojAssemblyReference.cache
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csproj.CoreCompileInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfoInputs.cache
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfo.cs
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.dll
+E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.deps.json
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csprojAssemblyReference.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csproj.CoreCompileInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfoInputs.cache
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfo.cs
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.dll
+/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.pdb

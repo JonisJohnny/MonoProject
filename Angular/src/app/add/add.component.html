@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+ 
+        <div class="col-6">
+        
+
+
+  <h5>Add to VehicleMake</h5>
+  <form (ngSubmit)="onSubmit()" #carForm="ngForm">
+    <div class="form-group">
+
+
+        <label for="brdc">Choice of Brand:</label>
+        <select [(ngModel)]="car.make_id" (change)="toggle()" name="make_id" class="form-control" id="make_id" required>
+          <option selected value="-1">Create new brand</option>
+          <option *ngFor="let bran of brandc.item1" [ngValue]="bran.id">{{bran.name}}</option>
+        </select>
+
+        <label *ngIf="show" for="name">Brand</label>
+        <input *ngIf="show" type="text" class="form-control" id="make_name"
+                 required
+                 [(ngModel)]="car.make_name" name="make_name"
+                 #name="ngModel">
+     
+        <label *ngIf="show" for="abrv">Slogan</label>
+        <input *ngIf="show" type="text" class="form-control" id="make_abrv"
+                 required
+                 [(ngModel)]="car.make_abrv" name="make_abrv"
+                 #name="ngModel">
+      <label for="name">Model</label>
+      <input type="text" class="form-control" id="model_name"
+               required
+               [(ngModel)]="car.model_name" name="model_name"
+               #name="ngModel">
+   
+      <label for="abrv">Color</label>
+      <input type="text" class="form-control" id="model_abrv"
+               required
+               [(ngModel)]="car.model_abrv" name="model_abrv"
+               #name="ngModel">
+      
+    </div>
+
+    <button type="button" class="btn btn-default" (click)="newCar(); carForm.reset()">Create New Car</button>
+  </form>
+  <p class="message" *ngIf="results">Added:{{results}} Object</p>
+</div>
+</div>
+</div>
