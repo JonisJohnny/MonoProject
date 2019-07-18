@@ -16,3 +16,12 @@ E:/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Proj
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfo.cs
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/Debug/netcoreapp2.1/Project.Common.pdb

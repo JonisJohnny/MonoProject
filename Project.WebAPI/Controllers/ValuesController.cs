@@ -10,46 +10,32 @@ namespace Project.WebAPI.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class MakeController : ControllerBase
     {
-
-        public ValuesController(ICarsService service)
+        public MakeController(IMakeService service)
         {
             this.Service = service;
-            
         }
-        protected ICarsService Service { get; private set; }
+        protected IMakeService Service { get; private set; }
         
         [HttpPost]
-        [Route("addcarmodel")]
+        [Route("addcarmake")]
         public int AddtoCars(PostVehicleArgs post)
         {
-            return Service.AddToVehicleModel(post);
+            return Service.AddToVehicleMake(post);
         }
+
         [HttpPut]
         [Route("vehiclemake/update")]
-        public int UpdateVehicleMake(VehicleMakeArgs make_model)
+        public int UpdateVehicleMake(VehicleMakeArgs makemodel)
         {
-            return Service.UpdateVehicleMake(make_model);
-        }
-        [HttpPut]
-        [Route("vehiclemodel/update")]
-        public int UpdateVehicleModel(VehicleModelArgs model_model)
-        {
-            return Service.UpdateVehicleModel(model_model);
+            return Service.UpdateVehicleMake(makemodel);
         }
         [HttpGet]
         [Route("vehiclemakes/{sortOrder}&{page}&{itempp}")]
-        public (List<IVehicleMake_Model>,int) GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public (List<IVehicleMakeModels>,int) GetAllVehicleMake(string sortOrder, int page, int itempp)
         {
             return Service.GetAllVehicleMake(sortOrder,page,itempp);
-        }
-
-        [HttpGet]
-        [Route("vehiclemodels/{sortOrder}&{filter}&{page}&{itempp}")]
-        public (List<IVehicleModel_Model>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp)
-        {
-            return Service.GetAllVehicleModel(sortOrder,filter,page,itempp);
         }
 
        [HttpDelete]
@@ -58,6 +44,34 @@ namespace Project.WebAPI.Controllers
         {
             return Service.RemoveFromVehicleMake(id);
         }
+    }
+    
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ModelController : ControllerBase
+    {
+        public ModelController(IModelService service)
+        {
+            this.Service = service;
+        }
+
+        protected IModelService Service { get; private set; }
+
+
+        [HttpPut]
+        [Route("vehiclemodel/update")]
+        public int UpdateVehicleModel(VehicleModelArgs modelmodel)
+        {
+            return Service.UpdateVehicleModel(modelmodel);
+        }
+
+        [HttpGet]
+        [Route("vehiclemodels/{sortOrder}&{filter}&{page}&{itempp}")]
+        public (List<IVehicleModelModels>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp)
+        {
+            return Service.GetAllVehicleModel(sortOrder,filter,page,itempp);
+        }
+
         [HttpDelete]
         [Route("vehicleModel/remove/{id}")]
         public int DeleteVehicleModelAsync(int id)

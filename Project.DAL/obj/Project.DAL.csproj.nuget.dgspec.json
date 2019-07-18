@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Document\\Asp.net\\Projects\\Project\\Project.DAL\\Project.DAL.csproj": {}
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {}
   },
   "projects": {
-    "E:\\Document\\Asp.net\\Projects\\Project\\Project.DAL\\Project.DAL.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Document\\Asp.net\\Projects\\Project\\Project.DAL\\Project.DAL.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.DAL\\Project.DAL.csproj",
-        "packagesPath": "C:\\Users\\Jonatan\\.nuget\\packages\\",
-        "outputPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.DAL\\obj\\",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jonatan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

@@ -46,3 +46,15 @@ E:/Document/Asp.net/Projects/Project/Project.Model/obj/Debug/netcoreapp2.1/Proje
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.csproj.CopyComplete
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/bin/Debug/netcoreapp2.1/Project.Model.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/bin/Debug/netcoreapp2.1/Project.Model.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/bin/Debug/netcoreapp2.1/Project.Model.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.csproj.CopyComplete
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/Debug/netcoreapp2.1/Project.Model.pdb

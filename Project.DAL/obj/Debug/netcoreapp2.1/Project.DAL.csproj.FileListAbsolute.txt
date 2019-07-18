@@ -34,3 +34,12 @@ E:/Document/Asp.net/Projects/Project/Project.DAL/obj/Debug/netcoreapp2.1/Project
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.AssemblyInfo.cs
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/bin/Debug/netcoreapp2.1/Project.DAL.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/bin/Debug/netcoreapp2.1/Project.DAL.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/Debug/netcoreapp2.1/Project.DAL.pdb

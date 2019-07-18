@@ -11,7 +11,45 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "AutoMapper/8.1.0": {
+      "Autofac.Extensions.DependencyInjection/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.9.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Autofac.WebApi/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "3.1.0"
+        },
+        "compile": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
+        }
+      },
+      "Autofac.WebApi2/4.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "[3.5.0, 5.0.0)",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.0, 6.0.0)"
+        },
+        "compile": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {}
+        }
+      },
+      "AutoMapper/8.1.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
@@ -22,6 +60,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -35,6 +86,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
         }
       },
       "Microsoft.AspNetCore/2.1.1": {
@@ -4511,14 +4574,58 @@
         "lib/netstandard2.0/Autofac.xml"
       ]
     },
-    "AutoMapper/8.1.0": {
-      "sha512": "Go75WXHE7p/8CtRaxZnvVEfcSh7xpE6zx9wkgN4I1BxvlzP0hoiTLHSXDYXgv9CoxaRj4ahwzCA/iwdpvyQyOA==",
+    "Autofac.Extensions.DependencyInjection/4.4.0": {
+      "sha512": "tkNVcEVTG+asY338sZQNbWQIoCrb13I6qOxBrVX7aStu7SGskDDyGT0TrqiJdfEB48GbCd04ZcNz86TdD4cIHg==",
       "type": "package",
-      "path": "automapper/8.1.0",
+      "path": "autofac.extensions.dependencyinjection/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.8.1.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.4.4.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "Autofac.WebApi/3.1.0": {
+      "sha512": "yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "type": "package",
+      "path": "autofac.webapi/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.webapi.3.1.0.nupkg.sha512",
+        "autofac.webapi.nuspec",
+        "lib/net40/Autofac.Integration.WebApi.dll",
+        "lib/net40/Autofac.Integration.WebApi.xml"
+      ]
+    },
+    "Autofac.WebApi2/4.2.1": {
+      "sha512": "qMjqactZoU9RhqzCZx7/sXvcg8OZXXIwUlToI7COJDK3pnA9UBXlbLBh/JhM8NvnLi26FSa+rdfxIiWnJvw23w==",
+      "type": "package",
+      "path": "autofac.webapi2/4.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.webapi2.4.2.1.nupkg.sha512",
+        "autofac.webapi2.nuspec",
+        "lib/net45/Autofac.Integration.WebApi.dll",
+        "lib/net45/Autofac.Integration.WebApi.pdb",
+        "lib/net45/Autofac.Integration.WebApi.xml"
+      ]
+    },
+    "AutoMapper/8.1.1": {
+      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "type": "package",
+      "path": "automapper/8.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.8.1.1.nupkg.sha512",
         "automapper.nuspec",
         "lib/net461/AutoMapper.dll",
         "lib/net461/AutoMapper.pdb",
@@ -4526,6 +4633,19 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "sha512": "MPMgL6JGEH2Egmgh3+tw2UVX05ph8As7YtYWzt2ZDCc0STHGG5EsV3UMWH/g4aHaN1q20Bbc0PTMy3I0PwgBGQ==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4543,6 +4663,20 @@
         "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
         "microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
         "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.0": {
+      "sha512": "OndfBxMYy/rFi86YAtzV2P815P09ZQnJNjDdCwN5v9cutN6GdI0YVcdlMlNw/WpVg9iN1yLkUxMx433tIQ15ZA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.2.0.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
     "Microsoft.AspNetCore/2.1.1": {
@@ -12083,7 +12217,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
       "Autofac >= 4.9.2",
+      "Autofac.Extensions.DependencyInjection >= 4.4.0",
+      "Autofac.WebApi >= 3.1.0",
+      "Autofac.WebApi2 >= 4.2.1",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12104,11 +12242,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+      "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj",
       "projectName": "Project.WebAPI",
-      "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+      "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj",
       "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-      "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/",
+      "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12125,29 +12263,29 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj"
             },
-            "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj": {
-              "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj"
+            "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj": {
+              "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj"
             }
           }
         }
@@ -12161,9 +12299,25 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          },
           "Autofac": {
             "target": "Package",
             "version": "[4.9.2, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
+          "Autofac.WebApi": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Autofac.WebApi2": {
+            "target": "Package",
+            "version": "[4.2.1, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -12190,5 +12344,37 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Autofac.WebApi 3.1.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Autofac.WebApi",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Autofac.WebApi2 4.2.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Autofac.WebApi2",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

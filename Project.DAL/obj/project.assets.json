@@ -3151,11 +3151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+      "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
       "projectName": "Project.DAL",
-      "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+      "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
       "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-      "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/",
+      "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

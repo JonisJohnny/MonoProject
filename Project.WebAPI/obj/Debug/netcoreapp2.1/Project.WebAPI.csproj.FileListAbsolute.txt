@@ -89,3 +89,34 @@ E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Proj
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.runtimeconfig.dev.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.WebAPI.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Model.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Service.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorAssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.RazorTargetAssemblyInfo.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb

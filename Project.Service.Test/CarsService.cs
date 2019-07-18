@@ -14,7 +14,7 @@ namespace Project.Service.Test
     {
 
 
-        public void GetAllVehicleModel_shouldgivelistandanumber()
+        public void GetAllVehicleModelshouldgivelistandanumber()
         {
 
             //Arange

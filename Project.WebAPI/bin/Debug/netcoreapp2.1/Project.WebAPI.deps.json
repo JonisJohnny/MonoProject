@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a86103763a2484973ee277481ba12f96e979d67b"
+    "signature": "e2758874e96b43be47b33bc5ef6195eeb4806eeb"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,11 @@
     ".NETCoreApp,Version=v2.1": {
       "Project.WebAPI/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
           "Autofac": "4.9.2",
+          "Autofac.Extensions.DependencyInjection": "4.4.0",
+          "Autofac.WebApi": "3.1.0",
+          "Autofac.WebApi2": "4.2.1",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -55,19 +59,83 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
-      "AutoMapper/8.1.0": {
+      "Autofac.Extensions.DependencyInjection/4.4.0": {
+        "dependencies": {
+          "Autofac": "4.9.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Autofac.WebApi/3.1.0": {
+        "dependencies": {
+          "Autofac": "4.9.2"
+        }
+      },
+      "Autofac.WebApi2/4.2.1": {
+        "dependencies": {
+          "Autofac": "4.9.2",
+          "Microsoft.AspNet.WebApi.Core": "5.2.0"
+        },
+        "runtime": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {
+            "assemblyVersion": "4.2.1.0",
+            "fileVersion": "4.2.1.266"
+          }
+        },
+        "compile": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {}
+        }
+      },
+      "AutoMapper/8.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
           "System.Reflection.Emit": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {
-            "assemblyVersion": "8.1.0.0",
-            "fileVersion": "8.1.0.0"
+            "assemblyVersion": "8.1.1.0",
+            "fileVersion": "8.1.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "6.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.20627.0"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -245,7 +313,7 @@
       },
       "Project.Repository/1.0.0": {
         "dependencies": {
-          "AutoMapper": "8.1.0",
+          "AutoMapper": "8.1.1",
           "Project.Common": "1.0.0",
           "Project.DAL": "1.0.0",
           "Project.Model": "1.0.0",
@@ -3345,12 +3413,47 @@
       "path": "autofac/4.9.2",
       "hashPath": "autofac.4.9.2.nupkg.sha512"
     },
-    "AutoMapper/8.1.0": {
+    "Autofac.Extensions.DependencyInjection/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Go75WXHE7p/8CtRaxZnvVEfcSh7xpE6zx9wkgN4I1BxvlzP0hoiTLHSXDYXgv9CoxaRj4ahwzCA/iwdpvyQyOA==",
-      "path": "automapper/8.1.0",
-      "hashPath": "automapper.8.1.0.nupkg.sha512"
+      "sha512": "sha512-tkNVcEVTG+asY338sZQNbWQIoCrb13I6qOxBrVX7aStu7SGskDDyGT0TrqiJdfEB48GbCd04ZcNz86TdD4cIHg==",
+      "path": "autofac.extensions.dependencyinjection/4.4.0",
+      "hashPath": "autofac.extensions.dependencyinjection.4.4.0.nupkg.sha512"
+    },
+    "Autofac.WebApi/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "path": "autofac.webapi/3.1.0",
+      "hashPath": "autofac.webapi.3.1.0.nupkg.sha512"
+    },
+    "Autofac.WebApi2/4.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qMjqactZoU9RhqzCZx7/sXvcg8OZXXIwUlToI7COJDK3pnA9UBXlbLBh/JhM8NvnLi26FSa+rdfxIiWnJvw23w==",
+      "path": "autofac.webapi2/4.2.1",
+      "hashPath": "autofac.webapi2.4.2.1.nupkg.sha512"
+    },
+    "AutoMapper/8.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "path": "automapper/8.1.1",
+      "hashPath": "automapper.8.1.1.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MPMgL6JGEH2Egmgh3+tw2UVX05ph8As7YtYWzt2ZDCc0STHGG5EsV3UMWH/g4aHaN1q20Bbc0PTMy3I0PwgBGQ==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OndfBxMYy/rFi86YAtzV2P815P09ZQnJNjDdCwN5v9cutN6GdI0YVcdlMlNw/WpVg9iN1yLkUxMx433tIQ15ZA==",
+      "path": "microsoft.aspnet.webapi.core/5.2.0",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model\\Project.Model.csproj": {}
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {}
   },
   "projects": {
-    "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\Project.Model.Common.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\Project.Model.Common.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
         "projectName": "Project.Model.Common",
-        "projectPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\Project.Model.Common.csproj",
-        "packagesPath": "C:\\Users\\Jonatan\\.nuget\\packages\\",
-        "outputPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\obj\\",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jonatan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -54,20 +54,20 @@
         }
       }
     },
-    "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model\\Project.Model.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model\\Project.Model.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
         "projectName": "Project.Model",
-        "projectPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model\\Project.Model.csproj",
-        "packagesPath": "C:\\Users\\Jonatan\\.nuget\\packages\\",
-        "outputPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model\\obj\\",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jonatan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\Project.Model.Common.csproj": {
-                "projectPath": "E:\\Document\\Asp.net\\Projects\\Project\\Project.Model.Common\\Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               }
             }
           }

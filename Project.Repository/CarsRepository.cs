@@ -8,74 +8,89 @@ using AutoMapper;
 
 namespace Project.Repository
 {
-    public class CarsRepository : ICarsRepository
+    public class MakeRepository : IMakeRepository
     {
-  
+       
 
-        public CarsRepository(CarsContext context)
+        public MakeRepository(CarsContext context, IMapper mapper, IModelRepository repos)
+        {
+            this.Context = context;   
+            this.Resp = repos;
+        }
+
+        protected CarsContext Context { get; private set; }
+        protected IModelRepository Resp { get; private set; }
+        public int AddToVehicleMake(PostVehicleArgs postveargs)
+        {
+            VehicleMakeEntity findvehiclemake = Context.VehicleMake.Find(postveargs.makeId);
+             if(findvehiclemake == null){
+                VehicleMakeEntity vme = new VehicleMakeEntity();
+                vme.Name = postveargs.makeName;
+                vme.Abrv = postveargs.makeAbrv;
+                Context.VehicleMake.Add(vme);
+                Context.SaveChanges();
+                postveargs.modelMakeId = vme.Id;
+            
+                return Resp.AddToVehicleModel(postveargs);
+            }else{
+                postveargs.modelMakeId = findvehiclemake.Id;
+                return Resp.AddToVehicleModel(postveargs);
+            }
+            
+            
+        }
+        public int UpdateVehicleMake(VehicleMakeArgs makemodel)
+        {
+            VehicleMakeEntity vme = Mapper.Map<VehicleMakeEntity>(makemodel);
+            Context.VehicleMake.Update(vme);
+            return Context.SaveChanges();
+        }
+        
+        public List<IVehicleMakeModels> GetAllVehicleMake()
+        {
+            return new List<IVehicleMakeModels>(Mapper.Map<List<VehicleMakeModels>>(Context.VehicleMake));
+        }
+        
+        public int RemoveFromVehicleMake(int id)
+        {
+             Context.VehicleMake.Remove(Context.VehicleMake.Find(id));
+             return Context.SaveChanges();   
+        }
+       
+    }
+     public class ModelRepository : IModelRepository
+    {
+
+
+        public ModelRepository(CarsContext context, IMapper mapper)
         {
             this.Context = context;   
         }
 
         protected CarsContext Context { get; private set; }
         
-      
         public int AddToVehicleModel(PostVehicleArgs postveargs)
         {
-            VehicleMakeEntity vehiclemakeentity = new VehicleMakeEntity();
-            vehiclemakeentity.Name = postveargs.make_Name;
-            vehiclemakeentity.Abrv = postveargs.make_Abrv;
-            VehicleModelEntity vehiclemodelentity = new VehicleModelEntity();
-            VehicleMakeEntity findvehiclemake = Context.VehicleMake.Find(postveargs.make_Id);
+            VehicleModelEntity vme = new VehicleModelEntity();
+            vme.MakeId = postveargs.modelMakeId;
+            vme.Name = postveargs.modelName;
+            vme.Abrv = postveargs.modelAbrv;
+            Context.VehicleModel.Add(vme);
+            return Context.SaveChanges();
 
-            if(findvehiclemake == null){
-                Context.VehicleMake.Add(vehiclemakeentity);
-                Context.SaveChanges();
-                vehiclemodelentity.MakeId = vehiclemakeentity.Id;
-            }else{
-                vehiclemakeentity.Id = postveargs.make_Id;
-                vehiclemodelentity.MakeId = postveargs.make_Id;
-            }
-            vehiclemodelentity.Id = postveargs.model_Id;
-            vehiclemodelentity.Name = postveargs.model_Name;
-            vehiclemodelentity.Abrv = postveargs.model_Abrv;
-            Context.VehicleModel.Add(vehiclemodelentity);
-            return Context.SaveChanges();
-            
-             
         }
-        public int UpdateVehicleMake(VehicleMakeArgs make_model)
+        public int UpdateVehicleModel(VehicleModelArgs modelmodel)
         {
-            VehicleMakeEntity vehiclemakeentity = new VehicleMakeEntity();
-            vehiclemakeentity.Id = make_model.Id;
-            vehiclemakeentity.Name = make_model.Name;
-            vehiclemakeentity.Abrv = make_model.Abrv;
-            Context.VehicleMake.Update(vehiclemakeentity);
+            VehicleModelEntity vme = Mapper.Map<VehicleModelEntity>(modelmodel);
+            Context.VehicleModel.Update(vme);
             return Context.SaveChanges();
-        }
-        public int UpdateVehicleModel(VehicleModelArgs model_model)
-        {
-            VehicleModelEntity vehiclemodelentity = new VehicleModelEntity();
-            vehiclemodelentity.Id = model_model.Id;
-            vehiclemodelentity.Name = model_model.Name;
-            vehiclemodelentity.Abrv = model_model.Abrv;
-            vehiclemodelentity.MakeId = model_model.MakeId;
-            Context.VehicleModel.Update(vehiclemodelentity);
-            return Context.SaveChanges();
-        }
-      
-        
-        public List<IVehicleModel_Model> GetAllVehicleModel()
-        {
-            return new List<IVehicleModel_Model>(Mapper.Map<List<VehicleModel_Model>>(Context.VehicleModel));
         }
     
-     
-        public int RemoveFromVehicleMake(int id)
+        public List<IVehicleModelModels> GetAllVehicleModel()
         {
-             Context.VehicleMake.Remove(Context.VehicleMake.Find(id));
-             return Context.SaveChanges();   
+            return new List<IVehicleModelModels>(Mapper.Map<List<VehicleModelModels>>(Context.VehicleModel));
         }
+    
         public int RemoveFromVehicleModel(int id)
         {
             Context.VehicleModel.Remove(Context.VehicleModel.Find(id));
@@ -83,4 +98,5 @@ namespace Project.Repository
         }
        
     }
+
 }

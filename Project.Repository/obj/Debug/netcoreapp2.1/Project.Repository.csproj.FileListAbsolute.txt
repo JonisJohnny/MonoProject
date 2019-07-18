@@ -74,3 +74,23 @@ E:/Document/Asp.net/Projects/Project/Project.Repository/bin/Debug/netcoreapp2.1/
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.csproj.CopyComplete
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Repository.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Repository.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Repository.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.DAL.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Model.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Repository.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.DAL.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Model.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/bin/Debug/netcoreapp2.1/Project.Repository.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.csproj.CopyComplete
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/Debug/netcoreapp2.1/Project.Repository.pdb

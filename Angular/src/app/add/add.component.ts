@@ -28,7 +28,7 @@ ngOnInit() {
  public show:boolean = true;
   toggle() {
    
-    if(this.car.make_id == -1){
+    if(this.car.makeid == -1){
       this.show = true;
     }else{
       this.show = false;
@@ -48,7 +48,7 @@ ngOnInit() {
   }
  
   newCar() {  
- 
+
     this.dataService.addCar(this.car).subscribe((results) => {
       this.results = results;
       this.router.navigate(['/fetch/'],{ relativeTo: this.route });

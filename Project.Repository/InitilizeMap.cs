@@ -1,28 +1,38 @@
-﻿using Project.DAL;
+﻿using Project.Common;
+using Project.DAL;
 using Project.Model;
 using Project.Model.Common;
 using AutoMapper;
 
 namespace Project.Repository
 {
-    public class InitilizeMap : IInitilizeMap
+    public class InitilizeMap : Profile
     {
 
-        public void Load()
+        public InitilizeMap()
         {
-            Mapper.Initialize(cfg => {
-                cfg.AllowNullCollections = true;
-                cfg.CreateMap<VehicleModelEntity, VehicleModel_Model>().ReverseMap();
-                cfg.CreateMap<VehicleModelEntity, IVehicleModel_Model>().ReverseMap();
-                cfg.CreateMap<IVehicleModel_Model, VehicleModel_Model>().ReverseMap();
 
-                cfg.CreateMap<VehicleMakeEntity, VehicleMake_Model>().ReverseMap();
-                cfg.CreateMap<VehicleMakeEntity, IVehicleMake_Model>().ReverseMap();
-                cfg.CreateMap<IVehicleMake_Model, VehicleMake_Model>().ReverseMap();
+                Mapper.Initialize(cfg => {
+                cfg.AllowNullCollections = true;
+                cfg.CreateMap<VehicleModelEntity, VehicleModelModels>().ReverseMap();
+                cfg.CreateMap<VehicleModelEntity, IVehicleModelModels>().ReverseMap();
+                cfg.CreateMap<IVehicleModelModels, VehicleModelModels>().ReverseMap();
+
+                cfg.CreateMap<VehicleMakeEntity, VehicleMakeModels>().ReverseMap();
+                cfg.CreateMap<VehicleMakeEntity, IVehicleMakeModels>().ReverseMap();
+                cfg.CreateMap<IVehicleMakeModels, VehicleMakeModels>().ReverseMap();
+
+                cfg.CreateMap<VehicleMakeArgs, VehicleMakeEntity>().ReverseMap();
+                cfg.CreateMap<VehicleModelArgs, VehicleModelEntity>().ReverseMap();
+                
             });
 
         }
+        
 
 
     }
+    
+    
+
 }

@@ -5,21 +5,24 @@ using System.Collections.Generic;
 
 namespace Project.Repository.Common
 {
-    public interface ICarsRepository
+    public interface IMakeRepository
     {
 
-        int AddToVehicleModel(PostVehicleArgs post);
+        int AddToVehicleMake(PostVehicleArgs post);
 
-        int UpdateVehicleMake(VehicleMakeArgs make_model);
-        int UpdateVehicleModel(VehicleModelArgs model_model);
+        int UpdateVehicleMake(VehicleMakeArgs makemodel);
 
-        List<IVehicleMake_Model> GetAllVehicleMake();
-
-        List<IVehicleModel_Model> GetAllVehicleModel();
+        List<IVehicleMakeModels> GetAllVehicleMake();
 
         int RemoveFromVehicleMake(int id);
+
+    }
+    public interface IModelRepository
+    {
+        int AddToVehicleModel(PostVehicleArgs post);
+        int UpdateVehicleModel(VehicleModelArgs modelmodel);
+        List<IVehicleModelModels> GetAllVehicleModel();
         int RemoveFromVehicleModel(int id);
-
-
+        
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj": {}
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj": {}
   },
   "projects": {
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
         "projectName": "Project.Common",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -54,14 +54,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -108,14 +108,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
         "projectName": "Project.Model.Common",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
         "projectName": "Project.Model",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -182,8 +182,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               }
             }
           }
@@ -212,14 +212,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj",
         "projectName": "Project.Repository.Common",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -236,11 +236,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               }
             }
           }
@@ -269,14 +269,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj",
         "projectName": "Project.Repository",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -293,20 +293,20 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
               }
             }
           }
@@ -339,14 +339,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj",
         "projectName": "Project.Service.Common",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -363,11 +363,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               }
             }
           }
@@ -396,14 +396,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj",
         "projectName": "Project.Service",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -420,17 +420,17 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj"
               }
             }
           }
@@ -459,14 +459,14 @@
         }
       }
     },
-    "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj",
         "projectName": "Project.WebAPI",
-        "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/Project.WebAPI.csproj",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/Project.WebAPI.csproj",
         "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-        "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.WebAPI/obj/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -483,29 +483,29 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.DAL/Project.DAL.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model.Common/Project.Model.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Model/Project.Model.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository.Common/Project.Repository.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Repository/Project.Repository.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/Project.Service.Common.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/Project.Service.Common.csproj"
               },
-              "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj": {
-                "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service/Project.Service.csproj"
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service/Project.Service.csproj"
               }
             }
           }
@@ -519,9 +519,25 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
             "Autofac": {
               "target": "Package",
               "version": "[4.9.2, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Autofac.WebApi": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Autofac.WebApi2": {
+              "target": "Package",
+              "version": "[4.2.1, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",

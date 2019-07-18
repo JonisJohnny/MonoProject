@@ -5,18 +5,23 @@ using System.Collections.Generic;
 
 namespace Project.Service.Common
 {
-    public interface ICarsService
+    public interface IMakeService
     {
         
-        int AddToVehicleModel(PostVehicleArgs post);
-        int UpdateVehicleMake(VehicleMakeArgs make_model);
-        int UpdateVehicleModel(VehicleModelArgs model_model);
+        int AddToVehicleMake(PostVehicleArgs post);
+        int UpdateVehicleMake(VehicleMakeArgs makemodel);
            
-        (List<IVehicleModel_Model>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp);
+        (List<IVehicleMakeModels>,int) GetAllVehicleMake(string sortOrder, int page, int itempp);
         
-        (List<IVehicleMake_Model>,int) GetAllVehicleMake(string sortOrder, int page, int itempp);
-
         int RemoveFromVehicleMake(int id);
+    }
+
+    public interface IModelService
+    {
+        int UpdateVehicleModel(VehicleModelArgs modelmodel);
+           
+        (List<IVehicleModelModels>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp);
+        
         int RemoveFromVehicleModel(int id);
         
       

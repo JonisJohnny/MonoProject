@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+      "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
       "projectName": "Project.Common",
-      "projectPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/Project.Common.csproj",
+      "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
       "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
-      "outputPath": "/Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Common/obj/",
+      "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

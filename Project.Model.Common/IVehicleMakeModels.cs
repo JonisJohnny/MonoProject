@@ -2,7 +2,7 @@
 
 namespace Project.Model.Common
 {
-    public interface IVehicleMake_Model
+    public interface IVehicleMakeModels
     {
         int Id { get; set; }
         string Name { get; set; }

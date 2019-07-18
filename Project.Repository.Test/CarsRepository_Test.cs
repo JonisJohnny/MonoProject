@@ -13,10 +13,10 @@ using Xunit;
 
 namespace Project.Repository.Test
 {
-    public class CarsRepository_Test
+    public class CarsRepositoryTest
     {
         [Fact]
-        public void GetAllVehicleMake_Shuldreturnlist()
+        public void GetAllVehicleMakeShuldreturnlist()
         {
             //Arange
             list expected;

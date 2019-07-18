@@ -4,14 +4,16 @@ import { DataService } from '../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
  
-export interface cars {
-  make_id: number;
-  make_name: string;
-  make_abrv: string;
-  model_makeid:number;
-  model_id: number;
-  model_name: string;
-  model_abrv: string;
+export interface vehiclemake {
+  id: number;
+  name: string;
+  abrv: string;
+}
+export interface vehiclemodel {
+  makeid:number;
+  id: number;
+  name: string;
+  abrv: string;
 }
 
 @Component({
@@ -28,8 +30,10 @@ resultsMa: Object;
 resultsMo: Object;
 resultUMa: Object;
 resultUMo: Object;
-cars: cars[];
-editCar: cars;
+vehiclemake: vehiclemake[];
+vehiclemodel: vehiclemodel[];
+editCarMa: vehiclemake;
+editCarMo: vehiclemodel;
 filter=0;
 pageSizeOptions: number[] = [5, 10, 25, 100];
 pageSortMa:string = "null";
@@ -123,24 +127,27 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   }
 
 
-  edit(cars: cars) {
-    this.editCar = cars;
+  editMa(vehiclemake: vehiclemake) {
+    this.editCarMa = vehiclemake;
+  }
+  editMo(vehiclemodel: vehiclemodel) {
+    this.editCarMo = vehiclemodel;
   }
   updateMake() {
-    if (this.editCar) {
+    if (this.editCarMa) {
       this.dataService
-        .updateMake(this.editCar)
+        .updateMake(this.editCarMa)
         .subscribe(car => this.resultUMa = car);
 
-      this.editCar = undefined;
+      this.editCarMa = undefined;
     }
   }
   updateModel() {
-    if (this.editCar) {
+    if (this.editCarMo) {
       this.dataService
-      .updateModel(this.editCar)
+      .updateModel(this.editCarMo)
       .subscribe(car => this.resultUMo = car);
-      this.editCar = undefined;
+      this.editCarMo = undefined;
     }
   }
 

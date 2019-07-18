@@ -38,3 +38,17 @@ E:/Document/Asp.net/Projects/Project/Project.Service.Common/bin/Debug/netcoreapp
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.csproj.CopyComplete
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.dll
 /Volumes/Jonatans HD/Document/Asp.net/Projects/Project/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Service.Common.deps.json
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Service.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Service.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Model.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/bin/Debug/netcoreapp2.1/Project.Model.Common.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.csprojAssemblyReference.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.csproj.CoreCompileInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.AssemblyInfoInputs.cache
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.AssemblyInfo.cs
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.csproj.CopyComplete
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.Service.Common/obj/Debug/netcoreapp2.1/Project.Service.Common.pdb

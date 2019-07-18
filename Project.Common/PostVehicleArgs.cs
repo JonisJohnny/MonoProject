@@ -4,14 +4,14 @@ namespace Project.Common
     public class PostVehicleArgs
     {
         
-        public int make_Id { get; set; }
-        public string make_Name { get; set; }
-        public string make_Abrv { get; set; }
+        public int makeId { get; set; }
+        public string makeName { get; set; }
+        public string makeAbrv { get; set; }
 
-        public int model_Id { get; set; }
-        public int model_MakeId { get; set; }
-        public string model_Name { get; set; }
-        public string model_Abrv { get; set; }
+        public int modelId { get; set; }
+        public int modelMakeId { get; set; }
+        public string modelName { get; set; }
+        public string modelAbrv { get; set; }
         
 
     }
