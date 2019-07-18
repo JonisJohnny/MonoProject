@@ -1,4 +1,4 @@
-﻿using Project.Common;
+using Project.Common;
 using Project.DAL;
 using Project.Model;
 using Project.Model.Common;
@@ -64,13 +64,6 @@ namespace Project.Repository
             return Context.SaveChanges();
         }
       
-        public List<IVehicleMake_Model> GetAllVehicleMake()
-        {
-
-            return new List<IVehicleMake_Model>(Mapper.Map<List<VehicleMake_Model>>(Context.VehicleMake));
-                       
-        }
-
         
         public List<IVehicleModel_Model> GetAllVehicleModel()
         {
