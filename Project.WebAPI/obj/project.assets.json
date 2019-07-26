@@ -4493,7 +4493,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "AutoMapper": "8.1.0",
+          "AutoMapper": "8.1.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
+          "Autofac": "4.9.2",
           "Project.Common": "1.0.0",
           "Project.DAL": "1.0.0",
           "Project.Model": "1.0.0",
@@ -4525,6 +4527,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "AutoMapper": "8.1.0",
+          "Autofac": "4.9.2",
           "Project.Common": "1.0.0",
           "Project.Model.Common": "1.0.0",
           "Project.Repository.Common": "1.0.0",
