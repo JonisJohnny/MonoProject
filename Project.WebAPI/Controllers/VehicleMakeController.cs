@@ -22,7 +22,7 @@ namespace Project.WebAPI.Controllers
         
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddtoCars(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> AddToVehicleMake(VehicleMakeArgs vehiclemakeargs)
         {
             return await Service.AddToVehicleMake(vehiclemakeargs);
         }
@@ -35,11 +35,16 @@ namespace Project.WebAPI.Controllers
         }
         [HttpGet]
         [Route("list/{sortOrder}&{page}&{itempp}")]
-        public List<IVehicleMakeModels> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
         {
-            return Service.GetAllVehicleMake(sortOrder,page,itempp);
+            return await Service.GetAllVehicleMake(sortOrder,page,itempp);
         }
-
+        [HttpGet]
+        [Route("item/{search}")]
+        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search)
+        {
+            return await Service.GetOneItemVehicleMake(search);
+        }
         [HttpDelete]
         [Route("remove/{id}")]
         public async Task<int> DeleteVehicleMakeAsync(Guid id)

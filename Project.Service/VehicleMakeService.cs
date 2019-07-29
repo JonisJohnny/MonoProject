@@ -28,11 +28,15 @@ namespace Project.Service
             return await Repository.UpdateVehicleMake(vehiclemakeargs);
         }
 
-        public List<IVehicleMakeModels> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
         {
-            return Repository.GetAllVehicleMake(sortOrder,page,itempp);
+            return await Repository.GetAllVehicleMake(sortOrder,page,itempp);
         }
 
+        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search)
+        {
+            return await Repository.GetOneItemVehicleMake(search);
+        }
         public async Task<int> RemoveFromVehicleMake(Guid id)
         {
             return await Repository.RemoveFromVehicleMake(id);

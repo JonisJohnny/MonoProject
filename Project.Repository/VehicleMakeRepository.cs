@@ -9,6 +9,7 @@ using System;
 using System.Linq;
 using AutoMapper;
 using System.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Project.Repository
@@ -51,38 +52,58 @@ namespace Project.Repository
 
         }
         
-        public List<IVehicleMakeModels> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
         {
-            var vm = from p in Context.VehicleMake select p;
-
-            switch (sortOrder)
+            try 
             {
-                case "Brand_desc":
-                    vm = vm.OrderByDescending(m => m.Name);
-                    break;
-                case "Id_":
-                case "Id_asc":
-                    vm = vm.OrderBy(m => m.Id);
-                    break;
-                case "id_desc":
-                    vm = vm.OrderByDescending(m => m.Id);
-                    break;
-                case "Slogan_":
-                case "Slogan_asc":
-                    vm = vm.OrderBy(m => m.Abrv);
-                    break;
-                case "Slogan_desc":
-                    vm = vm.OrderByDescending(m => m.Abrv);
-                    break;
-                default:
-                    vm = vm.OrderBy(m => m.Name);
-                    break;
+                var vm = from p in Context.VehicleMake select p;
+
+                switch (sortOrder)
+                {
+                    case "Brand_desc":
+                        vm = vm.OrderByDescending(m => m.Name);
+                        break;
+                    case "Id_":
+                    case "Id_asc":
+                        vm = vm.OrderBy(m => m.Id);
+                        break;
+                    case "id_desc":
+                        vm = vm.OrderByDescending(m => m.Id);
+                        break;
+                    case "Slogan_":
+                    case "Slogan_asc":
+                        vm = vm.OrderBy(m => m.Abrv);
+                        break;
+                    case "Slogan_desc":
+                        vm = vm.OrderByDescending(m => m.Abrv);
+                        break;
+                    default:
+                        vm = vm.OrderBy(m => m.Name);
+                        break;
+                }
+                
+                vm = vm.Skip(itempp * page).Take(itempp);
+
+                return new List<IVehicleMakeModels>(_mapper.Map<List<VehicleMakeModels>>(await vm.ToListAsync()));
             }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
+        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search){
             
-            vm = vm.Skip(itempp * page).Take(itempp);
-
-            return new List<IVehicleMakeModels>(_mapper.Map<List<VehicleMakeModels>>(vm));
-
+            try
+            {
+                var Item = await Context.VehicleMake.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower())).FirstOrDefaultAsync();
+                IVehicleMakeModels im = _mapper.Map<IVehicleMakeModels>(Item);
+                return im;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
         
         public async Task<int> RemoveFromVehicleMake(Guid id)

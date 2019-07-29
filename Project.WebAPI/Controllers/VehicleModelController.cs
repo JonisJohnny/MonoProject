@@ -4,6 +4,8 @@ using Project.Common;
 using Project.Model.Common;
 using Project.Service.Common;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Project.WebAPI.Controllers
 {
@@ -20,26 +22,36 @@ namespace Project.WebAPI.Controllers
 
         protected IVehicleModelService Service { get; private set; }
 
-
-        [HttpPut]
-        [Route("vehiclemodel/update")]
-        public int UpdateVehicleModel(VehicleModelArgs modelmodel)
+        [HttpPost]
+        [Route("add")]
+        public async Task<int> AddtoVehicleModel(VehicleModelArgs vehiclemodelargs)
         {
-            return Service.UpdateVehicleModel(modelmodel);
+            return await Service.AddToVehicleModel(vehiclemodelargs);
+        }
+        [HttpPut]
+        [Route("update")]
+        public async Task<int> UpdateVehicleModel(VehicleModelArgs vehiclemodelargs)
+        {
+            return await Service.UpdateVehicleModel(vehiclemodelargs);
         }
 
         [HttpGet]
-        [Route("vehiclemodels/{sortOrder}&{filter}&{page}&{itempp}")]
-        public (List<IVehicleModelModels>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp)
+        [Route("list/{sortOrder}&{filter}&{page}&{itempp}")]
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModel(string sortOrder, Guid? filter, int page, int itempp)
         {
-            return Service.GetAllVehicleModel(sortOrder,filter,page,itempp);
+            return await Service.GetAllVehicleModel(sortOrder,filter,page,itempp);
         }
-
-        [HttpDelete]
-        [Route("vehicleModel/remove/{id}")]
-        public int DeleteVehicleModelAsync(int id)
+        [HttpGet]
+        [Route("item/{search}")]
+        public async Task<IVehicleModelModels> GetOneItemVehicleModel(string search)
         {
-            return Service.RemoveFromVehicleModel(id);
+            return await Service.GetOneItemVehicleModel(search);
+        }
+        [HttpDelete]
+        [Route("remove/{id}")]
+        public async Task<int> DeleteVehicleModelAsync(Guid id)
+        {
+            return await Service.RemoveFromVehicleModel(id);
         }
 
 
