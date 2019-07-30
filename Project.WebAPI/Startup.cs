@@ -37,7 +37,7 @@ namespace Project.WebAPI
         {
             services.AddEntityFrameworkNpgsql().AddDbContext<CarsContext>().BuildServiceProvider();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddAutoMapper(typeof(RepositoryMapping));
+            services.AddAutoMapper(typeof(RepositoryMapping),typeof(WebApiMapping));
  
             services.AddAutofac();
             
