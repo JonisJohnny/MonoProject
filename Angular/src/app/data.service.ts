@@ -16,32 +16,48 @@ export class DataService {
   constructor(private http:HttpClient) {}
  
   addVehicleMake(vehiclemake: vehiclemake): Observable<vehiclemake> {
-    return this.http.post<vehiclemake>('/api/vehiclemake/add', vehiclemake);
+    var returning = this.http.post<vehiclemake>('/api/vehiclemake/add', vehiclemake);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemake));
+    return returning;
   }
   listVehicleMake(pageSort:string,pageSize: number, pageIndex: number): Observable<vehiclemake[]> {
-    return this.http.get<vehiclemake[]>(`/api/vehiclemake/list/${pageSort}&${pageIndex}&${pageSize}`);
+    var returning = this.http.get<vehiclemake[]>(`/api/vehiclemake/list/${pageSort}&${pageIndex}&${pageSize}`);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemake));
+    return returning;
   }
   updateVehicleMake (vehiclemake: vehiclemake): Observable<vehiclemake> {
-    return this.http.put<vehiclemake>('/api/vehiclemake/update', vehiclemake);
+    var returning = this.http.put<vehiclemake>('/api/vehiclemake/update', vehiclemake);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemake));
+    return returning;
   }
   deleteVehicleMake(make_id: string): Observable<{}> {
-    return this.http.delete(`/api/vehiclemake/remove/${make_id}`);
+    var returning = this.http.delete(`/api/vehiclemake/remove/${make_id}`);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemake));
+    return returning;
   }
 
 
 
 
   addVehicleModel(vehiclemodel: vehiclemodel): Observable<vehiclemodel> {
-    return this.http.post<vehiclemodel>('/api/vehiclemodel/add', vehiclemodel);
+    var returning = this.http.post<vehiclemodel>('/api/vehiclemake/add', vehiclemodel);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemodel));
+    return returning;
   }
   listVehicleModel(pageSort:string,pageSize: number, pageIndex: number, filter: string): Observable<vehiclemodel[]> {
-    return this.http.get<vehiclemodel[]>(`/api/vehiclemodel/list/${pageSort}&${filter}&${pageIndex}&${pageSize}`); 
+    var returning = this.http.get<vehiclemodel[]>(`/api/vehiclemodel/list/${pageSort}&${filter}&${pageIndex}&${pageSize}`); 
+   alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemodel));
+    return returning;
   }
   updateModel (vehiclemodel: vehiclemodel): Observable<vehiclemodel> {
-    return this.http.put<vehiclemodel>('/api/vehiclemodel/update', vehiclemodel);
+    var returning = this.http.put<vehiclemodel>('/api/vehiclemodel/update', vehiclemodel);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemodel));
+     return returning;
   }
   deleteVehicleModel(model_id: string): Observable<{}> {
-    return this.http.delete(`/api/vehiclemodel/remove/${model_id}`);
+    var returning = this.http.delete(`/api/vehiclemodel/remove/${model_id}`);
+    alert(JSON.stringify(returning)+" "+JSON.stringify(vehiclemodel));
+     return returning;
   }
  
 

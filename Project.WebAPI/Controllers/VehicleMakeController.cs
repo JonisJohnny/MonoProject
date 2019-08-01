@@ -1,6 +1,6 @@
 ﻿
 using System.Collections.Generic;
-
+using Project.Model;
 using Project.Model.Common;
 using Project.Service.Common;
 using System.Threading.Tasks;
@@ -25,16 +25,18 @@ namespace Project.WebAPI.Controllers
         
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakerest)
+        public async Task<int> AddToVehicleMakeAsync(VehicleMakeREST vehiclemakerest)
         {
-            return await Service.AddToVehicleMakeAsync(vehiclemakerest);
+            VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
+            return await Service.AddToVehicleMakeAsync(vmr);
         }
 
         [HttpPut]
         [Route("update")]
-        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakerest)
+        public async Task<int> UpdateVehicleMakeAsync(VehicleMakeREST vehiclemakerest)
         {
-            return await Service.UpdateVehicleMakeAsync(vehiclemakerest);
+            VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
+            return await Service.UpdateVehicleMakeAsync(vmr);
         }
         [HttpGet]
         [Route("list/{sortOrder}&{page}&{itempp}")]

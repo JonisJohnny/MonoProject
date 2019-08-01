@@ -1,6 +1,6 @@
 ﻿
 using System.Collections.Generic;
-
+using Project.Model;
 using Project.Model.Common;
 using Project.Service.Common;
 using Microsoft.AspNetCore.Mvc;
@@ -27,15 +27,17 @@ namespace Project.WebAPI.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddtoVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> AddtoVehicleModelAsync(VehicleModelREST vehiclemodelrest)
         {
-            return await Service.AddToVehicleModelAsync(vehiclemodelargs);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            return await Service.AddToVehicleModelAsync(vmr);
         }
         [HttpPut]
         [Route("update")]
-        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(VehicleModelREST vehiclemodelrest)
         {
-            return await Service.UpdateVehicleModelAsync(vehiclemodelargs);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            return await Service.UpdateVehicleModelAsync(vmr);
         }
 
         [HttpGet]
