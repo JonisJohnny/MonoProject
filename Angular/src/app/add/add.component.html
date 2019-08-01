@@ -11,32 +11,32 @@
 
 
       <label for="brdc">Choice of Brand:</label>
-      <select [(ngModel)]="car.makeid" (change)="toggle()" name="makeid" class="form-control" id="makeid" required>
-        <option selected value="-1">Create new brand</option>
-        <option *ngFor="let bran of brandc.item1" [ngValue]="bran.id">{{bran.name}}</option>
+      <select [(ngModel)]="VehicleMake.id" (change)="toggle()" name="makeid" class="form-control" id="makeid" required>
+        <option selected value="00000000-0000-0000-0000-000000000000">Create new brand</option>
+        <option *ngFor="let content of VehicleMakeArray" [ngValue]="content.id">{{content.name}}</option>
       </select>
 
       <label *ngIf="show" for="name">Brand</label>
       <input *ngIf="show" type="text" class="form-control" id="makename"
                required
-               [(ngModel)]="car.makename" name="makename"
+               [(ngModel)]="VehicleMake.name" name="makename"
                #name="ngModel">
    
       <label *ngIf="show" for="abrv">Slogan</label>
       <input *ngIf="show" type="text" class="form-control" id="makeabrv"
                required
-               [(ngModel)]="car.makeabrv" name="makeabrv"
+               [(ngModel)]="VehicleMake.abrv" name="makeabrv"
                #name="ngModel">
     <label for="name">Model</label>
     <input type="text" class="form-control" id="modelname"
              required
-             [(ngModel)]="car.modelname" name="modelname"
+             [(ngModel)]="VehicleModel.name" name="modelname"
              #name="ngModel">
  
     <label for="abrv">Color</label>
     <input type="text" class="form-control" id="modelabrv"
              required
-             [(ngModel)]="car.modelabrv" name="modelabrv"
+             [(ngModel)]="VehicleModel.abrv" name="modelabrv"
              #name="ngModel">
     
   </div>

@@ -1,4 +1,4 @@
-﻿using Project.Common;
+﻿
 using Project.Model.Common;
 using Project.Repository.Common;
 using Project.Service.Common;
@@ -18,28 +18,28 @@ namespace Project.Service
         protected IVehicleMakeRepository Repository { get; private set; }
 
 
-        public async Task<int> AddToVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
-            return await Repository.AddToVehicleMake(vehiclemakeargs);
+            return await Repository.AddToVehicleMakeAsync(vehiclemakeargs);
         }
 
-        public async Task<int> UpdateVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
-            return await Repository.UpdateVehicleMake(vehiclemakeargs);
+            return await Repository.UpdateVehicleMakeAsync(vehiclemakeargs);
         }
 
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
         {
-            return await Repository.GetAllVehicleMake(sortOrder,page,itempp);
+            return await Repository.GetAllVehicleMakeAsync(sortOrder,page,itempp);
         }
 
-        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search)
+        public async Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search)
         {
-            return await Repository.GetOneItemVehicleMake(search);
+            return await Repository.GetOneItemVehicleMakeAsync(search);
         }
-        public async Task<int> RemoveFromVehicleMake(Guid id)
+        public async Task<int> RemoveFromVehicleMakeAsync(Guid id)
         {
-            return await Repository.RemoveFromVehicleMake(id);
+            return await Repository.RemoveFromVehicleMakeAsync(id);
         }
 
 

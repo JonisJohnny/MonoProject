@@ -1,4 +1,4 @@
-﻿using Project.Common;
+﻿
 using Project.Model.Common;
 using Project.Repository.Common;
 using Project.Service.Common;
@@ -18,26 +18,26 @@ namespace Project.Service
 
         protected IVehicleModelRepository Repository { get; private set; }
 
-        public async Task<int> AddToVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-            return await Repository.AddToVehicleModel(vehiclemodelargs);
+            return await Repository.AddToVehicleModelAsync(vehiclemodelargs);
         }
-        public async Task<int> UpdateVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-            return await Repository.UpdateVehicleModel(vehiclemodelargs);
+            return await Repository.UpdateVehicleModelAsync(vehiclemodelargs);
         }
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModel(string sortOrder,Guid? filter, int page, int itempp)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder,Guid? filter, int page, int itempp)
         {
-            return await Repository.GetAllVehicleModel(sortOrder,filter,page,itempp);
+            return await Repository.GetAllVehicleModelAsync(sortOrder,filter,page,itempp);
         }
-        public async Task<IVehicleModelModels> GetOneItemVehicleModel(string search)
+        public async Task<IVehicleModelModels> GetOneItemVehicleModelAsync(string search)
         {
-            return await Repository.GetOneItemVehicleModel(search);
+            return await Repository.GetOneItemVehicleModelAsync(search);
         }
-        public async Task<int> RemoveFromVehicleModel(Guid id)
+        public async Task<int> RemoveFromVehicleModelAsync(Guid id)
         {
-            return await Repository.RemoveFromVehicleModel(id);
+            return await Repository.RemoveFromVehicleModelAsync(id);
         }
     }
 }

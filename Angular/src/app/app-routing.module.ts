@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FetchComponent } from './fetch/fetch.component';
 import { AddComponent } from './add/add.component';
+import { adminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {
-    path: 'fetch',
-    component: FetchComponent,
+    path: 'admin',
+    component: adminComponent,
     pathMatch: 'full'
-  },  {
+  }, {
     path: 'add',
     component: AddComponent,
     pathMatch: 'full'
