@@ -24,7 +24,7 @@ ngOnInit() {
 }
 
 getVehicles(): void {
-  this.dataService.listVehicleMake(null,50,0)
+  this.dataService.listVehicleMake(null,50,0,null)
     .subscribe(parts => {
       this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
         return <VehicleMakeModel>{
@@ -39,7 +39,6 @@ getVehicles(): void {
 
  public show:boolean = true;
   toggle() {
-   alert(this.VehicleMake.id);
     if(this.VehicleMake.id == "00000000-0000-0000-0000-000000000000"){
       this.show = true;
     }else{
@@ -61,7 +60,12 @@ getVehicles(): void {
   }
  
   newCar() {  
-
+    
+    if(this.VehicleMake.id != "00000000-0000-0000-0000-000000000000"){
+      this.VehicleModel.makeid = this.VehicleMake.id;
+    }
+    //alert(JSON.stringify(this.VehicleMake)+" "+JSON.stringify(this.VehicleModel));
+ 
     this.dataService.addVehicleMake(this.VehicleMake).subscribe((results) => {
       this.results = results;
       

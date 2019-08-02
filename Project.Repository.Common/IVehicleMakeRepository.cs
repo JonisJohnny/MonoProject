@@ -11,7 +11,7 @@ namespace Project.Repository.Common
     {
         Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs);
         Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs);
-        Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp);
+        Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search);
         Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search);
         Task<int> RemoveFromVehicleMakeAsync(Guid id);
 

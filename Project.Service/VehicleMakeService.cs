@@ -28,9 +28,9 @@ namespace Project.Service
             return await Repository.UpdateVehicleMakeAsync(vehiclemakeargs);
         }
 
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search)
         {
-            return await Repository.GetAllVehicleMakeAsync(sortOrder,page,itempp);
+            return await Repository.GetAllVehicleMakeAsync(sortOrder,page,itempp,search);
         }
 
         public async Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search)

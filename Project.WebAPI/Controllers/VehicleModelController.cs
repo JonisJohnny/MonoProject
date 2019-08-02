@@ -10,8 +10,6 @@ using AutoMapper;
 
 namespace Project.WebAPI.Controllers
 {
-
-    
     [Route("api/[controller]")]
     [ApiController]
     public class VehicleModelController : ControllerBase
@@ -41,10 +39,10 @@ namespace Project.WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("list/{sortOrder}&{filter}&{page}&{itempp}")]
-        public async Task<List<VehicleModelView>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp)
+        [Route("list/{sortOrder}&{filter}&{page}&{itempp}&{search}")]
+        public async Task<List<VehicleModelView>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp, string search)
         {
-            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModelAsync(sortOrder,filter,page,itempp));
+            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModelAsync(sortOrder,filter,page,itempp,search));
         }
         [HttpGet]
         [Route("item/{search}")]

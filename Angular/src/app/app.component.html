@@ -13,7 +13,19 @@
               <a class="nav-link" routerLink="add/">Add Data</a>
           </li>
       </ul>
+      <form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+        <div class="form-group">
+            <input type="text" id="search"
+                     required
+                     [(ngModel)]="search" name="search"
+                     #name="ngModel"><button type="button" class="btn btn-default" (click)="searchVehicles();searchForm.reset()">Search</button>
+    
+        </div>
+      
+        
+      </form>
   </nav>
+
               
   <router-outlet>
 

@@ -27,9 +27,9 @@ namespace Project.Service
             return await Repository.UpdateVehicleModelAsync(vehiclemodelargs);
         }
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder,Guid? filter, int page, int itempp)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder,Guid? filter, int page, int itempp, string search)
         {
-            return await Repository.GetAllVehicleModelAsync(sortOrder,filter,page,itempp);
+            return await Repository.GetAllVehicleModelAsync(sortOrder,filter,page,itempp,search);
         }
         public async Task<IVehicleModelModels> GetOneItemVehicleModelAsync(string search)
         {
