@@ -120,3 +120,8 @@ E:/Document/Asp.net/Projects/Project/Project.WebAPI/bin/Debug/netcoreapp2.1/Proj
 /Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.csproj.CopyComplete
 /Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.dll
 /Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/obj/Debug/netcoreapp2.1/Project.WebAPI.pdb
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Tests.dll
+/Users/jonatanivarsson/MonoProject/MonoProject/Project.WebAPI/bin/Debug/netcoreapp2.1/Project.Repository.Tests.pdb

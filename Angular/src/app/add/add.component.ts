@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { vehiclemake } from './classvehiclemake';
 import { vehiclemodel } from './classvehiclemodel';
+import { vehicle } from './classvehicle';
 import { DataService } from '../data.service';
 import { Router,ActivatedRoute } from '@angular/router';
 import { VehicleMakeModel, VehicleMakeResponse } from '../admin/vehiclemakeinterface';
@@ -12,10 +13,14 @@ import { VehicleMakeModel, VehicleMakeResponse } from '../admin/vehiclemakeinter
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-vehiclemake = vehiclemake;
-VehicleMakeArray: VehicleMakeModel[];
-results;
 
+VehicleMakeArray: VehicleMakeModel[];
+
+VehicleMake = new vehiclemake("00000000-0000-0000-0000-000000000000",'What brand is it?', 'What is thier slogan?');
+VehicleModel = new vehiclemodel("00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000",'What model?','What color does the car have?');
+Vehicle = new vehicle(this.VehicleMake,this.VehicleModel);
+results;
+public show:boolean = true;
  
 constructor(private dataService: DataService,private route: ActivatedRoute,private router: Router) { }
 
@@ -37,9 +42,9 @@ getVehicles(): void {
   })
 }
 
- public show:boolean = true;
+ 
   toggle() {
-    if(this.VehicleMake.id == "00000000-0000-0000-0000-000000000000"){
+    if(this.Vehicle.vehiclemake.id == "00000000-0000-0000-0000-000000000000"){
       this.show = true;
     }else{
       this.show = false;
@@ -49,9 +54,7 @@ getVehicles(): void {
 
 
 
-  VehicleMake = new vehiclemake("00000000-0000-0000-0000-000000000000",'What brand is it?', 'What is thier slogan?');
-  VehicleModel = new vehiclemodel("00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000",'What model?','What color does the car have?');
- 
+
   submitted = false;
  
   onSubmit() { 
@@ -60,21 +63,20 @@ getVehicles(): void {
   }
  
   newCar() {  
-    
-    if(this.VehicleMake.id != "00000000-0000-0000-0000-000000000000"){
-      this.VehicleModel.makeid = this.VehicleMake.id;
+    if(this.Vehicle.vehiclemake.id == "00000000-0000-0000-0000-000000000000"){
+        this.dataService.addVehicle(this.Vehicle).subscribe((results) => {
+          this.results = results;
+          this.router.navigate(['/admin/'],{ relativeTo: this.route });
+        });   
+    }else{
+        this.VehicleModel.makeid = this.Vehicle.vehiclemake.id;
+        this.dataService.addVehicleModel(this.VehicleModel).subscribe((results) => {
+          this.results = results;
+          this.router.navigate(['/admin/'],{ relativeTo: this.route });
+        });  
     }
-    //alert(JSON.stringify(this.VehicleMake)+" "+JSON.stringify(this.VehicleModel));
  
-    this.dataService.addVehicleMake(this.VehicleMake).subscribe((results) => {
-      this.results = results;
-      
-    });    
-    this.dataService.addVehicleModel(this.VehicleModel).subscribe((results) => {
-      this.results = results;
-      this.router.navigate(['/admin/'],{ relativeTo: this.route });
-      
-    });
+
   }
   
 

@@ -1,0 +1,436 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Tests/Project.Repository.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
+        "projectName": "Project.Common",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
+        "projectName": "Project.DAL",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
+        "projectName": "Project.Model.Common",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
+        "projectName": "Project.Model",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj",
+        "projectName": "Project.Repository.Common",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Tests/Project.Repository.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Tests/Project.Repository.Tests.csproj",
+        "projectName": "Project.Repository.Tests",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Tests/Project.Repository.Tests.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0-preview-20190715-02, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj",
+        "projectName": "Project.Repository",
+        "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/Project.Repository.csproj",
+        "packagesPath": "/Users/jonatanivarsson/.nuget/packages/",
+        "outputPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jonatanivarsson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Common/Project.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.DAL/Project.DAL.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model.Common/Project.Model.Common.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Model/Project.Model.csproj"
+              },
+              "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj": {
+                "projectPath": "/Users/jonatanivarsson/MonoProject/MonoProject/Project.Repository.Common/Project.Repository.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
