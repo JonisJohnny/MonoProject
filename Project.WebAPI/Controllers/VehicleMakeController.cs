@@ -6,6 +6,7 @@ using Project.Service.Common;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using AutoMapper;
 
 namespace Project.WebAPI.Controllers
 {
@@ -14,9 +15,11 @@ namespace Project.WebAPI.Controllers
     [ApiController]
     public class VehicleMakeController : ControllerBase
     {
-        public VehicleMakeController(IVehicleMakeService service)
+        private readonly IMapper _mapper;
+        public VehicleMakeController(IVehicleMakeService service, IMapper mapper)
         {
             this.Service = service;
+            _mapper = mapper;
         }
         protected IVehicleMakeService Service { get; private set; }
         
@@ -35,15 +38,15 @@ namespace Project.WebAPI.Controllers
         }
         [HttpGet]
         [Route("list/{sortOrder}&{page}&{itempp}")]
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<VehicleMakeView>> GetAllVehicleMake(string sortOrder, int page, int itempp)
         {
-            return await Service.GetAllVehicleMake(sortOrder,page,itempp);
+            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMake(sortOrder,page,itempp));
         }
         [HttpGet]
         [Route("item/{search}")]
-        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search)
+        public async Task<VehicleMakeView> GetOneItemVehicleMake(string search)
         {
-            return await Service.GetOneItemVehicleMake(search);
+            return _mapper.Map<VehicleMakeView>(await Service.GetOneItemVehicleMake(search));
         }
         [HttpDelete]
         [Route("remove/{id}")]
