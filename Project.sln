@@ -19,28 +19,27 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Service.Common", "Project.Service.Common\Project.Service.Common.csproj", "{F39ABB93-4947-43AE-B469-AEBF4A67502E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.WebAPI", "Project.WebAPI\Project.WebAPI.csproj", "{05E2BEA5-6D84-4C24-8ED7-E2822D66AC80}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Angular", "Angular\", "{5BFFA7B9-BA13-4E63-8CE9-C52C1BF044A2}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_51421"
-		Debug.AspNetCompiler.PhysicalPath = "Angular\"
+		Debug.AspNetCompiler.PhysicalPath = "Project.WebAPI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51421\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_51421"
-		Release.AspNetCompiler.PhysicalPath = "Angular\"
+		Release.AspNetCompiler.PhysicalPath = "Project.WebAPI\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51421\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "51421"
-		SlnRelativePath = "Angular\"
+		SlnRelativePath = "Project.WebAPI\"
 	EndProjectSection
 EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

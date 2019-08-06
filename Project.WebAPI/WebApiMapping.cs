@@ -17,8 +17,9 @@ namespace Project.WebAPI
             
             //VehicleModels Mapping
             CreateMap<IVehicleModelModels, VehicleModelView>().ReverseMap();
-            CreateMap<VehicleModelREST, VehicleModelModels>().ReverseMap();}
-
+            CreateMap<VehicleModelREST, VehicleModelModels>().ReverseMap();
+        }
+                   
     }
 
 }

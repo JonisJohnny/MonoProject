@@ -26,17 +26,16 @@ namespace Project.Repository
         
         public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-                VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
-                Context.VehicleModel.Add(vme);
-                return await Context.SaveChangesAsync();
-
+            
+            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
+            Context.VehicleModel.Add(vme);
+            return await Context.SaveChangesAsync();
         }
         public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-                VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
-                Context.VehicleModel.Update(vme);
-                return await Context.SaveChangesAsync();
-
+            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
+            Context.VehicleModel.Update(vme);
+            return await Context.SaveChangesAsync();
         }
     
 

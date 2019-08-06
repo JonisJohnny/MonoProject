@@ -25,13 +25,9 @@ namespace Project.Repository
         protected CarsContext Context { get; private set; }
         public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
-            if(vehiclemakeargs.Id == Guid.Empty){
                 VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
                 Context.VehicleMake.Add(vme);
-                return await Context.SaveChangesAsync();
-            }else{
-                return 0;
-            }
+                return await Context.SaveChangesAsync();    
         }
         public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {

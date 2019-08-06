@@ -15,4 +15,9 @@ namespace Project.WebAPI
         public string Name { get; set; }
         public string Abrv { get; set; }
     }
+    public class VehicleREST
+    {
+        public VehicleMakeREST vehiclemake { get; set; }
+        public VehicleModelREST vehiclemodel { get; set; }
+    }
 }

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { vehiclemake } from './add/classvehiclemake';
 import { vehiclemodel } from './add/classvehiclemodel';
+import { vehicle } from './add/classvehicle';
 import { BehaviorSubject } from 'rxjs';
 
 
@@ -32,9 +33,14 @@ export class DataService {
 
 
 
-  addVehicleMake(vehiclemake: vehiclemake): Observable<vehiclemake> {
-    return this.http.post<vehiclemake>('/api/vehiclemake/add', vehiclemake);
+  addVehicle(vehicle: vehicle): Observable<vehicle> {
+    return this.http.post<vehicle>('/api/vehicle/add',vehicle);
   }
+
+
+
+  
+
   listVehicleMake(pageSort:string,pageSize: number, pageIndex: number, pageSearch: string): Observable<vehiclemake[]> {
     return this.http.get<vehiclemake[]>(`/api/vehiclemake/list/${pageSort}&${pageIndex}&${pageSize}&${pageSearch}`);
   }

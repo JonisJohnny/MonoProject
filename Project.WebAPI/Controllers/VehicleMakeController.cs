@@ -27,8 +27,8 @@ namespace Project.WebAPI.Controllers
         [Route("add")]
         public async Task<int> AddToVehicleMakeAsync(VehicleMakeREST vehiclemakerest)
         {
-            VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
-            return await Service.AddToVehicleMakeAsync(vmr);
+                VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
+                return await Service.AddToVehicleMakeAsync(vmr);
         }
 
         [HttpPut]
