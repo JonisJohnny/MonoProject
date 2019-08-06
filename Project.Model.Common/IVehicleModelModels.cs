@@ -1,10 +1,11 @@
-﻿
+﻿using System;
+
 namespace Project.Model.Common
 {
     public interface IVehicleModelModels
     {
-        int Id { get; set; }
-        int MakeId { get; set; }
+        Guid Id { get; set; }
+        Guid MakeId { get; set; }
         string Name { get; set; }
         string Abrv { get; set; }
     }

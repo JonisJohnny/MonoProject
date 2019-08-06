@@ -9,5 +9,7 @@ namespace Project.Model
         public string Name { get; set; }
         public string Abrv { get; set; }
 
+        //List
+
     }
 }

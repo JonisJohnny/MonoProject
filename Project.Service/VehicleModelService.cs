@@ -5,6 +5,7 @@ using Project.Service.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
+using System;
 
 namespace Project.Service
 {
@@ -17,66 +18,26 @@ namespace Project.Service
 
         protected IVehicleModelRepository Repository { get; private set; }
 
-        public int UpdateVehicleModel(VehicleModelArgs modelmodel)
+        public async Task<int> AddToVehicleModel(VehicleModelArgs vehiclemodelargs)
         {
-            return Repository.UpdateVehicleModel(modelmodel);
+            return await Repository.AddToVehicleModel(vehiclemodelargs);
+        }
+        public async Task<int> UpdateVehicleModel(VehicleModelArgs vehiclemodelargs)
+        {
+            return await Repository.UpdateVehicleModel(vehiclemodelargs);
         }
 
-        public (List<IVehicleModelModels>,int) GetAllVehicleModel(string sortOrder, int filter, int page, int itempp)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModel(string sortOrder,Guid? filter, int page, int itempp)
         {
-
-
-            
-            var modelraw = (from mo in Repository.GetAllVehicleModel() select mo);
-            if (filter != 0)
-            {
-                modelraw = modelraw.Where(mo => mo.MakeId.Equals(filter));
-                
-            }
-            
-            int modelcount = modelraw.ToList().Count;
-            var model = modelraw;
-        
-
-            switch (sortOrder)
-            {
-                case "Model_desc":
-                    model = model.OrderByDescending(mo => mo.Name);
-                    break;
-                case "Id_":
-                case "Id_asc":
-                    model = model.OrderBy(mo => mo.Id);
-                    break;
-                case "Id_desc":
-                    model = model.OrderByDescending(mo => mo.Id);
-                    break;
-                case "Color_":
-                case "Color_asc":
-                    model = model.OrderBy(mo => mo.Abrv);
-                    break;
-                case "Color_desc":
-                    model = model.OrderByDescending(mo => mo.Abrv);
-                    break;
-                case "BrandId_":
-                case "BrandId_asc":
-                    model = model.OrderBy(mo => mo.MakeId);
-                    break;
-                case "BrandId_desc":
-                    model = model.OrderByDescending(mo => mo.MakeId);
-                    break;
-                default:
-                    model = model.OrderBy(mo => mo.Name);
-                    break;
-            }
-            model = model.Skip(itempp * page).Take(itempp);
-            return (model.ToList(),modelcount);
-
+            return await Repository.GetAllVehicleModel(sortOrder,filter,page,itempp);
         }
-
-        public int RemoveFromVehicleModel(int id)
+        public async Task<IVehicleModelModels> GetOneItemVehicleModel(string search)
         {
-            return Repository.RemoveFromVehicleModel(id);
+            return await Repository.GetOneItemVehicleModel(search);
         }
-
+        public async Task<int> RemoveFromVehicleModel(Guid id)
+        {
+            return await Repository.RemoveFromVehicleModel(id);
+        }
     }
 }

@@ -14,10 +14,10 @@ namespace Project.Repository
             //VehicleMakes Mapping
             CreateMap<VehicleMakeEntity, VehicleMakeModels>().ReverseMap();
             CreateMap<VehicleMakeEntity, IVehicleMakeModels>().ReverseMap();
-            CreateMap<IVehicleMakeModels, VehicleMakeEntity>().ReverseMap();
             CreateMap<IVehicleMakeModels, VehicleMakeModels>().ReverseMap();
 
             CreateMap<VehicleMakeArgs, VehicleMakeEntity>().ReverseMap();
+            
             //VehicleModels Mapping
             CreateMap<VehicleModelEntity, VehicleModelModels>().ReverseMap();
             CreateMap<VehicleModelEntity, IVehicleModelModels>().ReverseMap();

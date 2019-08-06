@@ -12,7 +12,8 @@ namespace Project.Service.Common
         
         Task<int> AddToVehicleMake(VehicleMakeArgs vehiclemakeargs);
         Task<int> UpdateVehicleMake(VehicleMakeArgs vehiclemakeargs);
-        List<IVehicleMakeModels> GetAllVehicleMake(string sortOrder, int page, int itempp);
+        Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp);
+        Task<IVehicleMakeModels> GetOneItemVehicleMake(string search);
         Task<int> RemoveFromVehicleMake(Guid id);
     }
 
