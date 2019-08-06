@@ -3,6 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { VehicleModelModel, VehicleModelResponse } from './vehiclemodelinterface';
+
+
  
 
 @Component({
@@ -17,7 +19,8 @@ VehicleModelArray: VehicleModelModel[];
 VehicleModel: VehicleModelModel;
 resultsMo: any;
 
-filter="00000000-0000-0000-0000-000000000000";
+filter:string;
+search="null";
 pageSizeOptions: number[] = [5, 10, 25, 100];
 pageSortTableVehicleModel:string = "null";
 
@@ -38,11 +41,15 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   constructor(private dataService:DataService) { }
    
   ngOnInit() {
-        this.getVehicles();
+        this.dataService.filter.subscribe( filter => {this.filter = filter; this.getVehicles();});
+        this.dataService.search.subscribe(search => {this.search = search; this.getVehicles();});
   } 
 
+
+  
+
   getVehicles(): void {
-    this.dataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filter)
+    this.dataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filter,this.search)
       .subscribe(parts => {
         this.VehicleModelArray = parts.map((response: VehicleModelResponse) => {
           return <VehicleModelModel>{
@@ -72,9 +79,6 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
     this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
   }
 
-  clearradiobtn(){
-    this.filter="00000000-0000-0000-0000-000000000000";
-  }
 
 
   editVehicleModel(vehiclemodel: VehicleModelModel) {

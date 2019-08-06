@@ -25,9 +25,13 @@ namespace Project.Repository
         protected CarsContext Context { get; private set; }
         public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
+            if(vehiclemakeargs.Id == Guid.Empty){
                 VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
                 Context.VehicleMake.Add(vme);
                 return await Context.SaveChangesAsync();
+            }else{
+                return 0;
+            }
         }
         public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
@@ -36,7 +40,7 @@ namespace Project.Repository
                 return await Context.SaveChangesAsync();
         }
         
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search)
         {
                 var vm = from p in Context.VehicleMake select p;
 
@@ -49,7 +53,7 @@ namespace Project.Repository
                     case "Id_asc":
                         vm = vm.OrderBy(m => m.Id);
                         break;
-                    case "id_desc":
+                    case "Id_desc":
                         vm = vm.OrderByDescending(m => m.Id);
                         break;
                     case "Slogan_":
@@ -64,6 +68,10 @@ namespace Project.Repository
                         break;
                 }
                 
+                if(search != "null"){
+                    vm = vm.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
+                }
+
                 vm = vm.Skip(itempp * page).Take(itempp);
 
                 return new List<IVehicleMakeModels>(_mapper.Map<List<VehicleMakeModels>>(await vm.ToListAsync()));

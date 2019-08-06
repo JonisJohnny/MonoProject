@@ -40,28 +40,35 @@ namespace Project.Repository
         }
     
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp, string search)
         {
                 var vm = from p in Context.VehicleModel select p;
 
                 switch (sortOrder)
                 {
-                    case "Brand_desc":
+                    case "Model_desc":
                         vm = vm.OrderByDescending(m => m.Name);
                         break;
                     case "Id_":
                     case "Id_asc":
                         vm = vm.OrderBy(m => m.Id);
                         break;
-                    case "id_desc":
+                    case "Id_desc":
                         vm = vm.OrderByDescending(m => m.Id);
                         break;
-                    case "Slogan_":
-                    case "Slogan_asc":
+                    case "Color_":
+                    case "Color_asc":
                         vm = vm.OrderBy(m => m.Abrv);
                         break;
-                    case "Slogan_desc":
+                    case "Color_desc":
                         vm = vm.OrderByDescending(m => m.Abrv);
+                        break;
+                    case "BrandId_":
+                    case "BrandId_asc":
+                        vm = vm.OrderBy(m => m.Makeid);
+                        break;
+                    case "BrandId_desc":
+                        vm = vm.OrderByDescending(m => m.Makeid);
                         break;
                     default:
                         vm = vm.OrderBy(m => m.Name);
@@ -72,7 +79,10 @@ namespace Project.Repository
                     vm = vm.Where(m => m.Makeid.Equals(filter));
                 }
                 
-
+                if(search != "null"){
+                    vm = vm.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
+                }
+                
                 vm = vm.Skip(itempp * page).Take(itempp);
 
                 return new List<IVehicleModelModels>(_mapper.Map<List<VehicleModelModels>>(await vm.ToListAsync()));

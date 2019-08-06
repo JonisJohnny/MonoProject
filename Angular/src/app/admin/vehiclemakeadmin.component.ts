@@ -4,6 +4,7 @@ import { DataService } from '../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { VehicleMakeModel, VehicleMakeResponse } from './vehiclemakeinterface';
 
+
 @Component({
   selector: 'app-vehiclemake',
   templateUrl: './vehiclemake.component.html',
@@ -12,11 +13,12 @@ import { VehicleMakeModel, VehicleMakeResponse } from './vehiclemakeinterface';
 export class VehicleMakeComponent implements OnInit {
 
 
-
-
 VehicleMakeArray: VehicleMakeModel[];
 VehicleMake: VehicleMakeModel;
 resultsMa: any;
+filter:string;
+nullGuidString="00000000-0000-0000-0000-000000000000";
+search:string;
 
 pageSizeOptions: number[] = [5, 10, 25, 100];
 pageSortTableVehicleMake:string = "null";
@@ -38,8 +40,8 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
   constructor(private dataService:DataService) { }
    
   ngOnInit() {
-    
-    this.getVehicles();
+    this.dataService.filter.subscribe(filter => this.filter = filter);
+    this.dataService.search.subscribe(search => {this.search = search; this.getVehicles();});
   } 
 
 
@@ -47,7 +49,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
 
   getVehicles(): void {
-    this.dataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex)
+    this.dataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex,this.search)
       .subscribe(parts => {
         this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
           return <VehicleMakeModel>{
@@ -74,6 +76,11 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
   setPageSizeOptions(setPageSizeOptionsInput: string) {
     this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
+  }
+
+  
+  filterVehicleModels(){
+    this.dataService.changeFilter(this.filter);
   }
 
 

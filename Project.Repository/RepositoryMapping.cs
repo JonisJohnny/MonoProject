@@ -22,6 +22,8 @@ namespace Project.Repository
             CreateMap<VehicleModelEntity, VehicleModelModels>().ReverseMap();
             CreateMap<VehicleModelEntity, IVehicleModelModels>().ReverseMap();
             CreateMap<IVehicleModelModels, VehicleModelModels>().ReverseMap();
+            CreateMap<VehicleMakeEntity, VehicleModelEntity>().ForMember(d => d.Makeid, a => a.MapFrom(s => s.Id)).ReverseMap();
+        
             
             
             

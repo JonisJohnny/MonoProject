@@ -39,10 +39,10 @@ namespace Project.WebAPI.Controllers
             return await Service.UpdateVehicleMakeAsync(vmr);
         }
         [HttpGet]
-        [Route("list/{sortOrder}&{page}&{itempp}")]
-        public async Task<List<VehicleMakeView>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
+        [Route("list/{sortOrder}&{page}&{itempp}&{search}")]
+        public async Task<List<VehicleMakeView>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search)
         {
-            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMakeAsync(sortOrder,page,itempp));
+            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMakeAsync(sortOrder,page,itempp,search));
         }
         [HttpGet]
         [Route("item/{search}")]
