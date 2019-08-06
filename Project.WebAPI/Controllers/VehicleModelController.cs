@@ -1,6 +1,6 @@
 ﻿
 using System.Collections.Generic;
-using Project.Common;
+using Project.Model;
 using Project.Model.Common;
 using Project.Service.Common;
 using Microsoft.AspNetCore.Mvc;
@@ -27,34 +27,36 @@ namespace Project.WebAPI.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddtoVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> AddtoVehicleModelAsync(VehicleModelREST vehiclemodelrest)
         {
-            return await Service.AddToVehicleModel(vehiclemodelargs);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            return await Service.AddToVehicleModelAsync(vmr);
         }
         [HttpPut]
         [Route("update")]
-        public async Task<int> UpdateVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(VehicleModelREST vehiclemodelrest)
         {
-            return await Service.UpdateVehicleModel(vehiclemodelargs);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            return await Service.UpdateVehicleModelAsync(vmr);
         }
 
         [HttpGet]
         [Route("list/{sortOrder}&{filter}&{page}&{itempp}")]
-        public async Task<List<VehicleModelView>> GetAllVehicleModel(string sortOrder, Guid? filter, int page, int itempp)
+        public async Task<List<VehicleModelView>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp)
         {
-            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModel(sortOrder,filter,page,itempp));
+            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModelAsync(sortOrder,filter,page,itempp));
         }
         [HttpGet]
         [Route("item/{search}")]
-        public async Task<VehicleModelView> GetOneItemVehicleModel(string search)
+        public async Task<VehicleModelView> GetOneItemVehicleModelAsync(string search)
         {
-            return _mapper.Map<VehicleModelView>(await Service.GetOneItemVehicleModel(search));
+            return _mapper.Map<VehicleModelView>(await Service.GetOneItemVehicleModelAsync(search));
         }
         [HttpDelete]
         [Route("remove/{id}")]
         public async Task<int> DeleteVehicleModelAsync(Guid id)
         {
-            return await Service.RemoveFromVehicleModel(id);
+            return await Service.RemoveFromVehicleModelAsync(id);
         }
 
 

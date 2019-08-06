@@ -1,6 +1,6 @@
 ﻿
 using System.Collections.Generic;
-using Project.Common;
+using Project.Model;
 using Project.Model.Common;
 using Project.Service.Common;
 using System.Threading.Tasks;
@@ -25,34 +25,36 @@ namespace Project.WebAPI.Controllers
         
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddToVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> AddToVehicleMakeAsync(VehicleMakeREST vehiclemakerest)
         {
-            return await Service.AddToVehicleMake(vehiclemakeargs);
+            VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
+            return await Service.AddToVehicleMakeAsync(vmr);
         }
 
         [HttpPut]
         [Route("update")]
-        public async Task<int> UpdateVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> UpdateVehicleMakeAsync(VehicleMakeREST vehiclemakerest)
         {
-            return await Service.UpdateVehicleMake(vehiclemakeargs);
+            VehicleMakeModels vmr = _mapper.Map<VehicleMakeModels>(vehiclemakerest);
+            return await Service.UpdateVehicleMakeAsync(vmr);
         }
         [HttpGet]
         [Route("list/{sortOrder}&{page}&{itempp}")]
-        public async Task<List<VehicleMakeView>> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<VehicleMakeView>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
         {
-            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMake(sortOrder,page,itempp));
+            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMakeAsync(sortOrder,page,itempp));
         }
         [HttpGet]
         [Route("item/{search}")]
-        public async Task<VehicleMakeView> GetOneItemVehicleMake(string search)
+        public async Task<VehicleMakeView> GetOneItemVehicleMakeAsync(string search)
         {
-            return _mapper.Map<VehicleMakeView>(await Service.GetOneItemVehicleMake(search));
+            return _mapper.Map<VehicleMakeView>(await Service.GetOneItemVehicleMakeAsync(search));
         }
         [HttpDelete]
         [Route("remove/{id}")]
         public async Task<int> DeleteVehicleMakeAsync(Guid id)
         {
-            return await Service.RemoveFromVehicleMake(id);
+            return await Service.RemoveFromVehicleMakeAsync(id);
         }
     }
 }

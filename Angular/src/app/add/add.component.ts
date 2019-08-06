@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { cars } from './cars';
+import { vehiclemake } from './classvehiclemake';
+import { vehiclemodel } from './classvehiclemodel';
 import { DataService } from '../data.service';
 import { Router,ActivatedRoute } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { VehicleMakeModel, VehicleMakeResponse } from '../admin/vehiclemakeinterface';
+
 
 @Component({
   selector: 'app-add',
@@ -10,25 +12,35 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-cars = cars;
-brandc: Object;
+vehiclemake = vehiclemake;
+VehicleMakeArray: VehicleMakeModel[];
 results;
-br;
 
  
 constructor(private dataService: DataService,private route: ActivatedRoute,private router: Router) { }
 
 ngOnInit() {
-  this.brandc = this.dataService.GetMakes(null,10,0).subscribe((brandc) => {this.brandc = brandc;});
-  
-
+ this.getVehicles();
 }
 
+getVehicles(): void {
+  this.dataService.listVehicleMake(null,50,0)
+    .subscribe(parts => {
+      this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
+        return <VehicleMakeModel>{
+          id: response.id,
+          name: response.name,
+          abrv: response.abrv
+        };
+      });
+
+  })
+}
 
  public show:boolean = true;
   toggle() {
-   
-    if(this.car.makeid == -1){
+   alert(this.VehicleMake.id);
+    if(this.VehicleMake.id == "00000000-0000-0000-0000-000000000000"){
       this.show = true;
     }else{
       this.show = false;
@@ -38,7 +50,8 @@ ngOnInit() {
 
 
 
-  car = new cars(-1,'What brand is it?', 'What is thier slogan?',0,0,'What model?','What color does the car have?');
+  VehicleMake = new vehiclemake("00000000-0000-0000-0000-000000000000",'What brand is it?', 'What is thier slogan?');
+  VehicleModel = new vehiclemodel("00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000",'What model?','What color does the car have?');
  
   submitted = false;
  
@@ -49,9 +62,13 @@ ngOnInit() {
  
   newCar() {  
 
-    this.dataService.addCar(this.car).subscribe((results) => {
+    this.dataService.addVehicleMake(this.VehicleMake).subscribe((results) => {
       this.results = results;
-      this.router.navigate(['/fetch/'],{ relativeTo: this.route });
+      
+    });    
+    this.dataService.addVehicleModel(this.VehicleModel).subscribe((results) => {
+      this.results = results;
+      this.router.navigate(['/admin/'],{ relativeTo: this.route });
       
     });
   }

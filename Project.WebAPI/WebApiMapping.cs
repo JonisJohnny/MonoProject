@@ -1,4 +1,4 @@
-﻿using Project.Common;
+﻿
 using Project.DAL;
 using Project.Model;
 using Project.Model.Common;
@@ -13,10 +13,11 @@ namespace Project.WebAPI
         {
             //VehicleMakes Mapping
             CreateMap<IVehicleMakeModels, VehicleMakeView>().ReverseMap();
+            CreateMap<VehicleMakeREST, VehicleMakeModels>().ReverseMap();
             
             //VehicleModels Mapping
             CreateMap<IVehicleModelModels, VehicleModelView>().ReverseMap();
-            
+            CreateMap<VehicleModelREST, VehicleModelModels>().ReverseMap();
         }
 
     }

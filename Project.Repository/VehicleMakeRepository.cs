@@ -1,4 +1,4 @@
-using Project.Common;
+
 using Project.DAL;
 using Project.Model;
 using Project.Model.Common;
@@ -23,39 +23,21 @@ namespace Project.Repository
             _mapper = mapper;
         }
         protected CarsContext Context { get; private set; }
-        public async Task<int> AddToVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
-            try 
-            {
                 VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
                 Context.VehicleMake.Add(vme);
                 return await Context.SaveChangesAsync();
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            
         }
-        public async Task<int> UpdateVehicleMake(VehicleMakeArgs vehiclemakeargs)
+        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
         {
-            try 
-            {
                 VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
                 Context.VehicleMake.Update(vme);
                 return await Context.SaveChangesAsync();
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-
         }
         
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMake(string sortOrder, int page, int itempp)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp)
         {
-            try 
-            {
                 var vm = from p in Context.VehicleMake select p;
 
                 switch (sortOrder)
@@ -85,38 +67,26 @@ namespace Project.Repository
                 vm = vm.Skip(itempp * page).Take(itempp);
 
                 return new List<IVehicleMakeModels>(_mapper.Map<List<VehicleMakeModels>>(await vm.ToListAsync()));
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
         }
         
-        public async Task<IVehicleMakeModels> GetOneItemVehicleMake(string search){
+        public async Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search){
             
-            try
-            {
-                var Item = await Context.VehicleMake.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower())).FirstOrDefaultAsync();
+                var Item = await Context.VehicleMake.FirstOrDefaultAsync(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
                 IVehicleMakeModels im = _mapper.Map<IVehicleMakeModels>(Item);
                 return im;
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
         }
         
-        public async Task<int> RemoveFromVehicleMake(Guid id)
+        public async Task<int> RemoveFromVehicleMakeAsync(Guid id)
         {
-            try 
-            {
-                Context.VehicleMake.Remove(Context.VehicleMake.Find(id));
-                return await Context.SaveChangesAsync(); 
-            }  
-            catch(Exception ex)
-            {
-                throw ex;
-            }
+                VehicleMakeEntity Find = Context.VehicleMake.Find(id);
+                if(Find != null){
+                    Context.VehicleMake.Remove(Find);
+                    return await Context.SaveChangesAsync(); 
+                }else{
+                    return 0;
+                }
+                
+
         }
        
     }

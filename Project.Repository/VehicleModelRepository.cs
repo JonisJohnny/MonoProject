@@ -1,4 +1,4 @@
-using Project.Common;
+
 using Project.DAL;
 using Project.Model;
 using Project.Model.Common;
@@ -24,40 +24,24 @@ namespace Project.Repository
 
         protected CarsContext Context { get; private set; }
         
-        public async Task<int> AddToVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-            try 
-            {
                 VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
                 Context.VehicleModel.Add(vme);
                 return await Context.SaveChangesAsync();
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
 
         }
-        public async Task<int> UpdateVehicleModel(VehicleModelArgs vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
         {
-            try 
-            {
                 VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
                 Context.VehicleModel.Update(vme);
                 return await Context.SaveChangesAsync();
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
 
         }
     
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModel(string sortOrder, Guid? filter, int page, int itempp)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp)
         {
-            try 
-            {
                 var vm = from p in Context.VehicleModel select p;
 
                 switch (sortOrder)
@@ -85,45 +69,33 @@ namespace Project.Repository
                 }
 
                 if(filter != Guid.Empty){
-                    vm = vm.Where(m => m.MakeId.Equals(filter));
+                    vm = vm.Where(m => m.Makeid.Equals(filter));
                 }
                 
 
                 vm = vm.Skip(itempp * page).Take(itempp);
 
                 return new List<IVehicleModelModels>(_mapper.Map<List<VehicleModelModels>>(await vm.ToListAsync()));
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
+
         }
         
-        public async Task<IVehicleModelModels> GetOneItemVehicleModel(string search){
-            
-            try
-            {
-                var Item = await Context.VehicleModel.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower())).FirstOrDefaultAsync();
+        public async Task<IVehicleModelModels> GetOneItemVehicleModelAsync(string search){
+
+                var Item = await Context.VehicleModel.FirstOrDefaultAsync(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
                 IVehicleModelModels im = _mapper.Map<IVehicleModelModels>(Item);
                 return im;
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-        }
+          }
         
-        public async Task<int> RemoveFromVehicleModel(Guid id)
+        public async Task<int> RemoveFromVehicleModelAsync(Guid id)
         {
-            try 
-            {
-                Context.VehicleModel.Remove(Context.VehicleModel.Find(id));
-                return await Context.SaveChangesAsync(); 
-            }  
-            catch(Exception ex)
-            {
-                throw ex;
-            }
+                VehicleModelEntity Find = Context.VehicleModel.Find(id);
+                if(Find != null){
+                    Context.VehicleModel.Remove(Find);
+                    return await Context.SaveChangesAsync(); 
+                }else{
+                    return 0;
+                }
+
         }
        
     }

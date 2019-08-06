@@ -1,17 +1,17 @@
 using System;
 
-namespace Project.Common
+namespace Project.WebAPI
 {
-    public class VehicleMakeArgs
+    public class VehicleMakeREST
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Abrv { get; set; }
     }
-    public class VehicleModelArgs
+    public class VehicleModelREST
     {
         public Guid Id { get; set; }
-        public Guid MakeId { get; set; }
+        public Guid Makeid { get; set; }
         public string Name { get; set; }
         public string Abrv { get; set; }
     }

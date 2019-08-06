@@ -1,0 +1,54 @@
+
+      <h4>Vehicle Model</h4>
+      <table mat-table (matSortChange)="sortTableVehicleModel($event)" matSort [dataSource]="VehicleModelArray" class="mat-elevation-z8">
+
+          <ng-container matColumnDef="id">
+            <th mat-sort-header="Id" class="mat-header-cell" *matHeaderCellDef> Id </th>
+            <td mat-cell *matCellDef="let content"> {{content.id}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="name">
+            <th mat-sort-header="Model" class="mat-header-cell" *matHeaderCellDef> Model </th>
+            <td mat-cell *matCellDef="let content; index as i">               
+              <a (click)="editVehicleModel(content)">
+                <span *ngIf="content!==VehicleModel">{{content.name}}</span>
+                <input *ngIf="content===VehicleModel" [(ngModel)]="content.name"
+                  (blur)="updateVehicleModel()" (keyup.enter)="updateVehicleModel()">
+              </a></td>
+          </ng-container>
+  
+        
+          <ng-container matColumnDef="abrv">
+            <th mat-sort-header="Color" class="mat-header-cell" *matHeaderCellDef> Color </th>
+            <td mat-cell *matCellDef="let content">              
+               <a (click)="editVehicleModel(content)">
+                <span *ngIf="content!==VehicleModel">{{content.abrv}}</span>
+                <input *ngIf="content===VehicleModel" [(ngModel)]="content.abrv"
+                  (blur)="updateVehicleModel()" (keyup.enter)="updateVehicleModel()">
+              </a></td>
+          </ng-container>
+
+          <ng-container matColumnDef="makeid">
+              <th mat-sort-header="BrandId" class="mat-header-cell" *matHeaderCellDef> Brand Id </th>
+              <td mat-cell *matCellDef="let content"> {{content.makeid}} </td>
+            </ng-container>
+  
+          <ng-container matColumnDef="delete">
+              <th mat-header-cell *matHeaderCellDef> Delete </th>
+              <td mat-cell *matCellDef="let content"> <button class="btn" (click)="deleteVehicleModel(content.id)">X</button> </td>
+            </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsModel"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsModel;"></tr>
+          
+        </table>
+
+        <mat-paginator [length]="10"
+        [pageSize]="paginationDetailMo.value.pageSize"
+        [pageSizeOptions]="pageSizeOptions"
+        (page)="paginationOptionsRefreshVehicleModel($event)">
+        </mat-paginator>
+      
+        
+        <p class="message" *ngIf="resultsMo">Deleted:{{resultsMo}} Object</p>
+
