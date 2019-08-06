@@ -37,20 +37,17 @@ namespace Project.WebAPI
         {
             services.AddEntityFrameworkNpgsql().AddDbContext<CarsContext>().BuildServiceProvider();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAutoMapper(typeof(RepositoryMapping));
+ 
             services.AddAutofac();
-            services.AddAutoMapper(typeof(InitilizeMap));
-
+            
             var builder = new ContainerBuilder();
             builder.Populate(services);
-            builder.RegisterType<MakeRepository>().As<IMakeRepository>();
-            builder.RegisterType<ModelRepository>().As<IModelRepository>();
-            builder.RegisterType<MakeService>().As<IMakeService>();
-            builder.RegisterType<ModelService>().As<IModelService>();
+            builder.RegisterAssemblyModules(typeof(RepositoryModule).Assembly,typeof(ServiceModule).Assembly);
             this.Container = builder.Build();
 
             return new AutofacServiceProvider(this.Container);
 
-            
         }
          
    

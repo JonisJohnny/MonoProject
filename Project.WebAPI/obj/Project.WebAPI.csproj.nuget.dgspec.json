@@ -322,7 +322,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -444,6 +452,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
