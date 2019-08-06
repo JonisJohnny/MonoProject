@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { vehiclemake } from './add/classvehiclemake';
-import { vehiclemodel } from './add/classvehiclemodel';
-import { vehicle } from './add/classvehicle';
+import { VehicleMake } from './add/class.vehicle-make';
+import { VehicleModel } from './add/class.vehicle-model';
+import { Vehicle } from './add/class.vehicle';
 import { BehaviorSubject } from 'rxjs';
 
 

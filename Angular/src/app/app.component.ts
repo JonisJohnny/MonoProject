@@ -9,13 +9,13 @@ import { DataService } from './data.service';
 export class AppComponent {
   title = 'Angular';
   search:string;
-  constructor(private dataService:DataService){}
+  constructor(private DataService:DataService){}
 
   searchVehicles(){
     if(this.search == "" || this.search == undefined){
         this.search = "null";
     }
-      this.dataService.changeSearch(this.search);
+      this.DataService.changeSearch(this.search);
   }
   submitted = false;
  

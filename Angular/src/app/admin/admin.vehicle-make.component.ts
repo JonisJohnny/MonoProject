@@ -2,7 +2,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleMakeModel, VehicleMakeResponse } from './vehiclemakeinterface';
+import { VehicleMakeModel, VehicleMakeResponse } from './interface.vehicle-make';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { VehicleMakeModel, VehicleMakeResponse } from './vehiclemakeinterface';
   templateUrl: './vehiclemake.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class VehicleMakeComponent implements OnInit {
+export class AdminVehicleMakeComponent implements OnInit {
 
 
 VehicleMakeArray: VehicleMakeModel[];
@@ -37,11 +37,11 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
 
 
-  constructor(private dataService:DataService) { }
+  constructor(private DataService:DataService) { }
    
   ngOnInit() {
-    this.dataService.filter.subscribe(filter => this.filter = filter);
-    this.dataService.search.subscribe(search => {this.search = search; this.getVehicles();});
+    this.DataService.filter.subscribe(filter => this.filter = filter);
+    this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
   } 
 
 
@@ -49,7 +49,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
 
   getVehicles(): void {
-    this.dataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex,this.search)
+    this.DataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex,this.search)
       .subscribe(parts => {
         this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
           return <VehicleMakeModel>{
@@ -80,7 +80,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
   
   filterVehicleModels(){
-    this.dataService.changeFilter(this.filter);
+    this.DataService.changeFilter(this.filter);
   }
 
 
@@ -90,7 +90,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
   }
   updateVehicleMake() {
     if (this.VehicleMake) {
-      this.dataService
+      this.DataService
         .updateVehicleMake(this.VehicleMake)
         .subscribe(update => this.VehicleMake = update);
 
@@ -101,7 +101,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
   deleteVehicleMake(id: string) {
     
-    this.dataService.deleteVehicleMake(id).subscribe((res) => {
+    this.DataService.deleteVehicleMake(id).subscribe((res) => {
         this.getVehicles();
         this.resultsMa = res;
       });
