@@ -1,9 +1,9 @@
 export class VehicleMake {
 
     constructor(
-      public Id: string,
-      public Name: string,
-      public Abrv: string,
+      public id: string,
+      public name: string,
+      public abrv: string,
     ) {  }
   
   }

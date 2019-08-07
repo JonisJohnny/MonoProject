@@ -9,8 +9,8 @@ import { VehicleModelModel, VehicleModelResponse } from './interface.vehicle-mod
 
 @Component({
   selector: 'app-vehiclemodel',
-  templateUrl: './vehiclemodel.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './admin.vehicle-model.component.html',
+  styleUrls: ['./admin.main.component.css']
 })
 export class AdminVehicleModelComponent implements OnInit {
 
@@ -96,8 +96,8 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
 
   
   
-  deleteVehicleModel(id:string) {
-    this.DataService.deleteVehicleModel(id).subscribe((res) => {
+  deleteVehicleModel(Id:string) {
+    this.DataService.deleteVehicleModel(Id).subscribe((res) => {
     this.getVehicles();
       this.resultsMo = res;
     });
