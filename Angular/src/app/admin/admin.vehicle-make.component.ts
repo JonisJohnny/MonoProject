@@ -21,7 +21,7 @@ nullGuidString="00000000-0000-0000-0000-000000000000";
 search:string;
 
 pageSizeOptions: number[] = [5, 10, 25, 100];
-pageSortTableVehicleMake:string = "null";
+pageSortTableVehicleMake:string;
 
 displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 

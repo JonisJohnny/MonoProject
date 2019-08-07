@@ -22,7 +22,7 @@ resultsMo: any;
 filter:string;
 search="null";
 pageSizeOptions: number[] = [5, 10, 25, 100];
-pageSortTableVehicleModel:string = "null";
+pageSortTableVehicleModel:string;
 
 displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
 
