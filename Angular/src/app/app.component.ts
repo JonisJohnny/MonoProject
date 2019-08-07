@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private DataService:DataService){}
 
   searchVehicles(){
-    if(this.search == "" || this.search == undefined){
+    if(this.search === "" || this.search === undefined){
         this.search = "null";
     }
       this.DataService.changeSearch(this.search);

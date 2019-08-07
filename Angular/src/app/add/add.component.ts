@@ -44,7 +44,7 @@ getVehicles(): void {
 
  
   toggle() {
-    if(this.Vehicle.VehicleMake.Id == "00000000-0000-0000-0000-000000000000"){
+    if(this.Vehicle.VehicleMake.id === "00000000-0000-0000-0000-000000000000"){
       this.show = true;
     }else{
       this.show = false;
@@ -63,13 +63,13 @@ getVehicles(): void {
   }
  
   newCar() {  
-    if(this.Vehicle.VehicleMake.Id == "00000000-0000-0000-0000-000000000000"){
+    if(this.Vehicle.VehicleMake.id === "00000000-0000-0000-0000-000000000000"){
         this.DataService.addVehicle(this.Vehicle).subscribe((results) => {
           this.results = results;
           this.router.navigate(['/admin/'],{ relativeTo: this.route });
         });   
     }else{
-        this.VehicleModel.MakeId = this.Vehicle.VehicleMake.Id;
+        this.VehicleModel.makeid = this.Vehicle.VehicleMake.id;
         this.DataService.addVehicleModel(this.VehicleModel).subscribe((results) => {
           this.results = results;
           this.router.navigate(['/admin/'],{ relativeTo: this.route });

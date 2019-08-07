@@ -7,8 +7,8 @@ import { VehicleMakeModel, VehicleMakeResponse } from './interface.vehicle-make'
 
 @Component({
   selector: 'app-vehiclemake',
-  templateUrl: './vehiclemake.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './admin.vehicle-make.component.html',
+  styleUrls: ['./admin.main.component.css']
 })
 export class AdminVehicleMakeComponent implements OnInit {
 
@@ -42,8 +42,8 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
   ngOnInit() {
     this.DataService.filter.subscribe(filter => this.filter = filter);
     this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
-  } 
 
+  } 
 
 
 
