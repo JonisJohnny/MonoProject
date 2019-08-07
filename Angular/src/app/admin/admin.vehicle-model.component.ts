@@ -2,17 +2,17 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleModelModel, VehicleModelResponse } from './vehiclemodelinterface';
+import { VehicleModelModel, VehicleModelResponse } from './interface.vehicle-model';
 
 
  
 
 @Component({
   selector: 'app-vehiclemodel',
-  templateUrl: './vehiclemodel.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './admin.vehicle-model.component.html',
+  styleUrls: ['./admin.main.component.css']
 })
-export class VehicleModelComponent implements OnInit {
+export class AdminVehicleModelComponent implements OnInit {
 
 
 VehicleModelArray: VehicleModelModel[];
@@ -38,18 +38,18 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
 
 
 
-  constructor(private dataService:DataService) { }
+  constructor(private DataService:DataService) { }
    
   ngOnInit() {
-        this.dataService.filter.subscribe( filter => {this.filter = filter; this.getVehicles();});
-        this.dataService.search.subscribe(search => {this.search = search; this.getVehicles();});
+        this.DataService.filter.subscribe( filter => {this.filter = filter; this.getVehicles();});
+        this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
   } 
 
 
   
 
   getVehicles(): void {
-    this.dataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filter,this.search)
+    this.DataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filter,this.search)
       .subscribe(parts => {
         this.VehicleModelArray = parts.map((response: VehicleModelResponse) => {
           return <VehicleModelModel>{
@@ -86,7 +86,7 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   }
   updateVehicleModel() {
     if (this.VehicleModel) {
-      this.dataService
+      this.DataService
       .updateModel(this.VehicleModel)
       .subscribe(update => this.VehicleModel = update);
       this.VehicleModel = undefined;
@@ -96,8 +96,8 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
 
   
   
-  deleteVehicleModel(id:string) {
-    this.dataService.deleteVehicleModel(id).subscribe((res) => {
+  deleteVehicleModel(Id:string) {
+    this.DataService.deleteVehicleModel(Id).subscribe((res) => {
     this.getVehicles();
       this.resultsMo = res;
     });

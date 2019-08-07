@@ -1,5 +1,5 @@
 
-  export class vehiclemodel {
+  export class VehicleModel {
 
     constructor(
       public id: string,

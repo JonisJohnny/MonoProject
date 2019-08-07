@@ -1,4 +1,4 @@
-export class vehiclemake {
+export class VehicleMake {
 
     constructor(
       public id: string,
