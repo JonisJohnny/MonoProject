@@ -1,5 +1,5 @@
-import { VehicleMake } from './class.vehicle-make';
-import { VehicleModel } from './class.vehicle-model';
+import { VehicleMake } from './vehicle-make.class';
+import { VehicleModel } from './vehicle-model.class';
 
 export class Vehicle {
 

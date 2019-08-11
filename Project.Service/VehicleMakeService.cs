@@ -18,20 +18,21 @@ namespace Project.Service
         protected IVehicleMakeRepository Repository { get; private set; }
 
 
-        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
+        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs)
         {
-            return await Repository.AddToVehicleMakeAsync(vehiclemakeargs);
+            return await Repository.AddToVehicleMakeAsync(vehicleMakeArgs);
         }
 
-        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
+        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs)
         {
-            return await Repository.UpdateVehicleMakeAsync(vehiclemakeargs);
+            return await Repository.UpdateVehicleMakeAsync(vehicleMakeArgs);
         }
 
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel)
         {
-
-            return await Repository.GetAllVehicleMakeAsync(sortOrder,page,itempp,search);
+            
+            return await Repository.GetAllVehicleMakeAsync(tableSortOrder,pageIndex,itemsPerPage,searchTabel);
+            
         }
 
         public async Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search)

@@ -14,6 +14,7 @@ namespace Project.WebAPI
             //VehicleMakes Mapping
             CreateMap<IVehicleMakeModels, VehicleMakeView>().ReverseMap();
             CreateMap<VehicleMakeREST, VehicleMakeModels>().ReverseMap();
+           
             
             //VehicleModels Mapping
             CreateMap<IVehicleModelModels, VehicleModelView>().ReverseMap();

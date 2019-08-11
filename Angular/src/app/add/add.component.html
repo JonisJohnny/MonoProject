@@ -5,33 +5,33 @@
         <form (ngSubmit)="onSubmit()" #carForm="ngForm">
           <div class="form-group">
               <label for="brdc">Choice of Brand:</label>
-              <select [(ngModel)]="VehicleMake.id" (change)="toggle()" name="makeid" class="form-control" id="makeid" required>
-                <option selected value="00000000-0000-0000-0000-000000000000">Create new brand</option>
-                <option *ngFor="let content of VehicleMakeArray" [ngValue]="content.id">{{content.name}}</option>
+              <select [(ngModel)]="vehicleMake.id" (change)="toggle()" name="makeid" class="form-control" id="makeid" required>
+                <option selected value="-1">Create new brand</option>
+                <option *ngFor="let content of vehicleMakeArray" [ngValue]="content.id">{{content.name}}</option>
               </select>
 
               <label *ngIf="show" for="name">Brand</label>
               <input *ngIf="show" type="text" class="form-control" id="makename"
                       required
-                      [(ngModel)]="VehicleMake.name" name="makename"
-                      #name="ngModel">
+                      [(ngModel)]="vehicleMake.name" name="makename"
+                      #name="ngModel" placeholder="What brand is it?">
           
               <label *ngIf="show" for="abrv">Slogan</label>
               <input *ngIf="show" type="text" class="form-control" id="makeabrv"
                       required
-                      [(ngModel)]="VehicleMake.abrv" name="makeabrv"
-                      #name="ngModel">
+                      [(ngModel)]="vehicleMake.abrv" name="makeabrv"
+                      #name="ngModel"placeholder="What is thier slogan?">
             <label for="name">Model</label>
             <input type="text" class="form-control" id="modelname"
                     required
-                    [(ngModel)]="VehicleModel.name" name="modelname"
-                    #name="ngModel">
+                    [(ngModel)]="vehicleModel.name" name="modelname"
+                    #name="ngModel" placeholder="What model?">
         
             <label for="abrv">Color</label>
             <input type="text" class="form-control" id="modelabrv"
                     required
-                    [(ngModel)]="VehicleModel.abrv" name="modelabrv"
-                    #name="ngModel">
+                    [(ngModel)]="vehicleModel.abrv" name="modelabrv"
+                    #name="ngModel" placeholder="What color does the car have?">
           </div>
 
           <button type="button" class="btn btn-default" (click)="newCar(); carForm.reset()">Create New Car</button>

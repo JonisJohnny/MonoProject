@@ -27,16 +27,16 @@ namespace Project.WebAPI.Controllers
         
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddToVehicleAsync(VehicleREST vehiclerest)
+        public async Task<int> AddToVehicleAsync(VehicleREST vehicleREST)
         {
                 var guid = Guid.NewGuid();
-                vehiclerest.vehiclemake.Id = guid;
-                vehiclerest.vehiclemodel.Makeid = guid;
-                VehicleMakeModels vmar = _mapper.Map<VehicleMakeModels>(vehiclerest.vehiclemake);
-                VehicleModelModels vmor = _mapper.Map<VehicleModelModels>(vehiclerest.vehiclemodel);
-                int addtovehiclemakeasyncresult = await ServiceMake.AddToVehicleMakeAsync(vmar);
-                int addtovehiclemodelasyncresult = await ServiceModel.AddToVehicleModelAsync(vmor);
-                return addtovehiclemakeasyncresult * addtovehiclemodelasyncresult;
+                vehicleREST.vehiclemake.Id = guid;
+                vehicleREST.vehiclemodel.Makeid = guid;
+                VehicleMakeModels vmar = _mapper.Map<VehicleMakeModels>(vehicleREST.vehiclemake);
+                VehicleModelModels vmor = _mapper.Map<VehicleModelModels>(vehicleREST.vehiclemodel);
+                int addToVehicleMakeAsyncResult = await ServiceMake.AddToVehicleMakeAsync(vmar);
+                int addToVehicleModelAsyncResult = await ServiceModel.AddToVehicleModelAsync(vmor);
+                return addToVehicleMakeAsyncResult * addToVehicleModelAsyncResult;
         }
     }
 }

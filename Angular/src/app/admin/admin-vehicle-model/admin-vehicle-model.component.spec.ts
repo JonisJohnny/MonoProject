@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AdminVehicleModelComponent } from './admin-vehicle-model.component';
 
-import { AdminVehicleMakeComponent } from './admin.vehicle-make.component';
-
-describe('VehicelMakeComponent', () => {
-  let component: AdminVehicleMakeComponent;
-  let fixture: ComponentFixture<AdminVehicleMakeComponent>;
+describe('VehicelModelComponent', () => {
+  let component: AdminVehicleModelComponent;
+  let fixture: ComponentFixture<AdminVehicleModelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminVehicleMakeComponent ]
+      declarations: [ AdminVehicleModelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminVehicleMakeComponent);
+    fixture = TestBed.createComponent(AdminVehicleModelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

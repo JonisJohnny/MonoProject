@@ -24,26 +24,26 @@ namespace Project.Repository
 
         protected CarsContext Context { get; private set; }
         
-        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehicleModelArgs)
         {
             
-            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
+            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehicleModelArgs);
             Context.VehicleModel.Add(vme);
             return await Context.SaveChangesAsync();
         }
-        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehicleModelArgs)
         {
-            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehiclemodelargs);
+            VehicleModelEntity vme = _mapper.Map<VehicleModelEntity>(vehicleModelArgs);
             Context.VehicleModel.Update(vme);
             return await Context.SaveChangesAsync();
         }
     
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp, string search)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string tableSortOrder, string filterTableFromBrand, int pageIndex, int itemsPerPage, string searchTable)
         {
                 var vm = from p in Context.VehicleModel select p;
 
-                switch (sortOrder)
+                switch (tableSortOrder)
                 {
                     case "Model_desc":
                         vm = vm.OrderByDescending(m => m.Name);
@@ -74,17 +74,18 @@ namespace Project.Repository
                         break;
                 }
 
-                if(filter != Guid.Empty){
-                    vm = vm.Where(m => m.Makeid.Equals(filter));
+                if(filterTableFromBrand != "-1"){
+                    Guid filterInGuid = new Guid(filterTableFromBrand);
+                    vm = vm.Where(m => m.Makeid.Equals(filterInGuid));
                 }
                 
-                if(search != "null"){
-                    vm = vm.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
+                if(searchTable != "null"){
+                    vm = vm.Where(s => s.Name.ToLower().Contains(searchTable.ToLower()) || s.Abrv.ToLower().Contains(searchTable.ToLower()));
                 }
                 
-                vm = vm.Skip(itempp * page).Take(itempp);
+                vm = vm.Skip(itemsPerPage * pageIndex).Take(itemsPerPage);
 
-                return new List<IVehicleModelModels>(_mapper.Map<List<VehicleModelModels>>(await vm.ToListAsync()));
+                return new List<IVehicleModelModels>(_mapper.Map<List<IVehicleModelModels>>(await vm.ToListAsync()));
 
         }
         

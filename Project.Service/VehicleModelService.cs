@@ -18,18 +18,18 @@ namespace Project.Service
 
         protected IVehicleModelRepository Repository { get; private set; }
 
-        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> AddToVehicleModelAsync(IVehicleModelModels vehicleModelArgs)
         {
-            return await Repository.AddToVehicleModelAsync(vehiclemodelargs);
+            return await Repository.AddToVehicleModelAsync(vehicleModelArgs);
         }
-        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehiclemodelargs)
+        public async Task<int> UpdateVehicleModelAsync(IVehicleModelModels vehicleModelArgs)
         {
-            return await Repository.UpdateVehicleModelAsync(vehiclemodelargs);
+            return await Repository.UpdateVehicleModelAsync(vehicleModelArgs);
         }
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string sortOrder,Guid? filter, int page, int itempp, string search)
+        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string tableSortOrder, string filterTableFromBrand, int pageIndex, int itemsPerPage, string searchTable)
         {
-            return await Repository.GetAllVehicleModelAsync(sortOrder,filter,page,itempp,search);
+            return await Repository.GetAllVehicleModelAsync(tableSortOrder,filterTableFromBrand,pageIndex,itemsPerPage,searchTable);
         }
         public async Task<IVehicleModelModels> GetOneItemVehicleModelAsync(string search)
         {

@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{05E2BEA5-6D84-4C24-8ED7-E2822D66AC80}|Default">
+  <MonoDevelop.Ide.ItemProperties.Project.WebAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project.Repository.Tests/VehicleMakeRepositoryTest.cs">
+    <Files>
+      <File FileName="Project.Repository.Tests/VehicleMakeRepositoryTest.cs" Line="34" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

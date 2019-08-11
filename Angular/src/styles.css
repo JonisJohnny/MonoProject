@@ -1,6 +1,6 @@
 
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('bootstrap-4/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 .col-6
 {

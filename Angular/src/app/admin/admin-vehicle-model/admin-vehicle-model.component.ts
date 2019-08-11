@@ -1,30 +1,30 @@
 
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleModelModel, VehicleModelResponse } from './interface.vehicle-model';
+import { VehicleModelModel, VehicleModelResponse } from '../vehicle-model.interface';
 
 
  
 
 @Component({
   selector: 'app-vehiclemodel',
-  templateUrl: './admin.vehicle-model.component.html',
-  styleUrls: ['./admin.main.component.css']
+  templateUrl: './admin-vehicle-model.component.html',
+  styleUrls: ['../admin-main.component.css']
 })
 export class AdminVehicleModelComponent implements OnInit {
 
 
-VehicleModelArray: VehicleModelModel[];
-VehicleModel: VehicleModelModel;
-resultsMo: any;
+vehicleModelArray: VehicleModelModel[];
+vehicleModel: VehicleModelModel;
+resultsVehicleModelDelete: any;
 
-filter:string;
+filterModelTabel:string;
 search="null";
 pageSizeOptions: number[] = [5, 10, 25, 100];
 pageSortTableVehicleModel:string;
 
-displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
+displayedColumnsModel: string[] = ['name', 'abrv', 'delete'];
 
 
   @Input() paginationDetailMo = new BehaviorSubject(
@@ -41,7 +41,7 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   constructor(private DataService:DataService) { }
    
   ngOnInit() {
-        this.DataService.filter.subscribe( filter => {this.filter = filter; this.getVehicles();});
+        this.DataService.filterModelTabelFunc.subscribe( filter => {this.filterModelTabel = filter; this.getVehicles();});
         this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
   } 
 
@@ -49,14 +49,13 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   
 
   getVehicles(): void {
-    this.DataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filter,this.search)
+    this.DataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filterModelTabel,this.search)
       .subscribe(parts => {
-        this.VehicleModelArray = parts.map((response: VehicleModelResponse) => {
+        this.vehicleModelArray = parts.map((response: VehicleModelResponse) => {
           return <VehicleModelModel>{
             id: response.id,
             name: response.name,
             abrv: response.abrv,
-            makeid: response.makeid
           };
         });
 
@@ -81,15 +80,15 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
 
 
 
-  editVehicleModel(vehiclemodel: VehicleModelModel) {
-    this.VehicleModel = vehiclemodel;
+  editVehicleModel(vehicleModel: VehicleModelModel) {
+    this.vehicleModel = vehicleModel;
   }
   updateVehicleModel() {
-    if (this.VehicleModel) {
+    if (this.vehicleModel) {
       this.DataService
-      .updateModel(this.VehicleModel)
-      .subscribe(update => this.VehicleModel = update);
-      this.VehicleModel = undefined;
+      .updateModel(this.vehicleModel)
+      .subscribe(update => this.vehicleModel = update);
+      this.vehicleModel = undefined;
     }
   }
 
@@ -99,11 +98,12 @@ displayedColumnsModel: string[] = ['id', 'name', 'abrv','makeid', 'delete'];
   deleteVehicleModel(Id:string) {
     this.DataService.deleteVehicleModel(Id).subscribe((res) => {
     this.getVehicles();
-      this.resultsMo = res;
+      this.resultsVehicleModelDelete = res;
+      setTimeout(function() {
+        this.resultsVehicleModelDelete = false;
+        }.bind(this), 3000);
     });
-    setTimeout(function() {
-      this.resultsMo = false;
-      }.bind(this), 3000);
+
     
   }
   

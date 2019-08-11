@@ -9,9 +9,9 @@ namespace Project.Repository.Common
 {
     public interface IVehicleMakeRepository
     {
-        Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs);
-        Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs);
-        Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search);
+        Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs);
+        Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs);
+        Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel);
         Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search);
         Task<int> RemoveFromVehicleMakeAsync(Guid id);
 

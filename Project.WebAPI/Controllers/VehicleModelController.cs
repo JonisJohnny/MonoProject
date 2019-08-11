@@ -25,24 +25,24 @@ namespace Project.WebAPI.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<int> AddtoVehicleModelAsync(VehicleModelREST vehiclemodelrest)
+        public async Task<int> AddtoVehicleModelAsync(VehicleModelREST vehicleModelREST)
         {
-            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehicleModelREST);
             return await Service.AddToVehicleModelAsync(vmr);
         }
         [HttpPut]
         [Route("update")]
-        public async Task<int> UpdateVehicleModelAsync(VehicleModelREST vehiclemodelrest)
+        public async Task<int> UpdateVehicleModelAsync(VehicleModelREST vehicleModelREST)
         {
-            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehiclemodelrest);
+            VehicleModelModels vmr = _mapper.Map<VehicleModelModels>(vehicleModelREST);
             return await Service.UpdateVehicleModelAsync(vmr);
         }
 
         [HttpGet]
-        [Route("list/{sortOrder}&{filter}&{page}&{itempp}&{search}")]
-        public async Task<List<VehicleModelView>> GetAllVehicleModelAsync(string sortOrder, Guid? filter, int page, int itempp, string search)
+        [Route("list/{tableSortOrder}&{filterTableFromBrand}&{pageIndex}&{itemsPerPage}&{searchTable}")]
+        public async Task<List<VehicleModelView>> GetAllVehicleModelAsync(string tableSortOrder, string filterTableFromBrand, int pageIndex, int itemsPerPage, string searchTable)
         {
-            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModelAsync(sortOrder,filter,page,itempp,search));
+            return _mapper.Map<List<VehicleModelView>>(await Service.GetAllVehicleModelAsync(tableSortOrder,filterTableFromBrand,pageIndex,itemsPerPage,searchTable));
         }
         [HttpGet]
         [Route("item/{search}")]

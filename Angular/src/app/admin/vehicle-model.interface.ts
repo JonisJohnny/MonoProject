@@ -1,13 +1,13 @@
 
 export interface VehicleModelModel {
-    id: string;
+    id:string;
+    makeid:string;
     name: string;
     abrv: string;
-    makeid: string;
   }
  export interface VehicleModelResponse {
-    id: string;
+    id:string;
+    makeid:string;
     name: string;
     abrv:string;
-    makeid: string;
   }

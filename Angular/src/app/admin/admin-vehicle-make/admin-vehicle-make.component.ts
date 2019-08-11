@@ -1,29 +1,28 @@
 
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleMakeModel, VehicleMakeResponse } from './interface.vehicle-make';
+import { VehicleMakeModel, VehicleMakeResponse } from '../vehicle-make.interface';
 
 
 @Component({
   selector: 'app-vehiclemake',
-  templateUrl: './admin.vehicle-make.component.html',
-  styleUrls: ['./admin.main.component.css']
+  templateUrl: './admin-vehicle-make.component.html',
+  styleUrls: ['../admin-main.component.css']
 })
 export class AdminVehicleMakeComponent implements OnInit {
 
 
-VehicleMakeArray: VehicleMakeModel[];
-VehicleMake: VehicleMakeModel;
-resultsMa: any;
-filter:string;
-nullGuidString="00000000-0000-0000-0000-000000000000";
+vehicleMakeArray: VehicleMakeModel[];
+vehicleMake: VehicleMakeModel;
+resultsVehicleMakeDelete: any;
+filterModelTabel:string;
 search:string;
 
 pageSizeOptions: number[] = [5, 10, 25, 100];
 pageSortTableVehicleMake:string;
 
-displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
+displayedColumnsMake: string[] = ['select', 'name', 'abrv', 'delete'];
 
 
 @Input() paginationDetailMa = new BehaviorSubject(
@@ -40,7 +39,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
   constructor(private DataService:DataService) { }
    
   ngOnInit() {
-    this.DataService.filter.subscribe(filter => this.filter = filter);
+    this.DataService.filterModelTabelFunc.subscribe(filter => this.filterModelTabel = filter);
     this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
 
   } 
@@ -51,7 +50,7 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
   getVehicles(): void {
     this.DataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex,this.search)
       .subscribe(parts => {
-        this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
+        this.vehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
           return <VehicleMakeModel>{
             id: response.id,
             name: response.name,
@@ -80,21 +79,21 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
 
   
   filterVehicleModels(){
-    this.DataService.changeFilter(this.filter);
+    this.DataService.changeFilter(this.filterModelTabel);
   }
 
 
 
-  editVehicleMake(vehiclemake: VehicleMakeModel) {
-    this.VehicleMake = vehiclemake;
+  editVehicleMake(vehicleMake: VehicleMakeModel) {
+    this.vehicleMake = vehicleMake;
   }
   updateVehicleMake() {
-    if (this.VehicleMake) {
+    if (this.vehicleMake) {
       this.DataService
-        .updateVehicleMake(this.VehicleMake)
-        .subscribe(update => this.VehicleMake = update);
+        .updateVehicleMake(this.vehicleMake)
+        .subscribe(update => this.vehicleMake = update);
 
-      this.VehicleMake = undefined;
+      this.vehicleMake = undefined;
     }
   }
 
@@ -103,11 +102,12 @@ displayedColumnsMake: string[] = ['select','id', 'name', 'abrv', 'delete'];
     
     this.DataService.deleteVehicleMake(id).subscribe((res) => {
         this.getVehicles();
-        this.resultsMa = res;
+        this.resultsVehicleMakeDelete = res;
+        setTimeout(function() {
+          this.resultsVehicleMakeDelete = false;
+          }.bind(this), 3000);
       });
-      setTimeout(function() {
-        this.resultsMa = false;
-        }.bind(this), 3000);
+
   }
   
 

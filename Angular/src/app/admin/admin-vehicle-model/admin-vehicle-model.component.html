@@ -1,18 +1,13 @@
 
       <h4>Vehicle Model</h4>
-      <table mat-table (matSortChange)="sortTableVehicleModel($event)" matSort [dataSource]="VehicleModelArray" class="mat-elevation-z8">
-
-          <ng-container matColumnDef="id">
-            <th mat-sort-header="Id" class="mat-header-cell" *matHeaderCellDef> Id </th>
-            <td mat-cell *matCellDef="let content"> {{content.id}} </td>
-          </ng-container>
+      <table mat-table (matSortChange)="sortTableVehicleModel($event)" matSort [dataSource]="vehicleModelArray" class="mat-elevation-z8">
   
           <ng-container matColumnDef="name">
             <th mat-sort-header="Model" class="mat-header-cell" *matHeaderCellDef> Model </th>
-            <td mat-cell *matCellDef="let content; index as i">               
+            <td mat-cell *matCellDef="let content; index as i">
               <a (click)="editVehicleModel(content)">
-                <span *ngIf="content!==VehicleModel">{{content.name}}</span>
-                <input *ngIf="content===VehicleModel" [(ngModel)]="content.name"
+                <span *ngIf="content!==vehicleModel">{{content.name}}</span>
+                <input *ngIf="content===vehicleModel" [(ngModel)]="content.name"
                   (blur)="updateVehicleModel()" (keyup.enter)="updateVehicleModel()">
               </a></td>
           </ng-container>
@@ -20,18 +15,13 @@
         
           <ng-container matColumnDef="abrv">
             <th mat-sort-header="Color" class="mat-header-cell" *matHeaderCellDef> Color </th>
-            <td mat-cell *matCellDef="let content">              
+            <td mat-cell *matCellDef="let content">
                <a (click)="editVehicleModel(content)">
-                <span *ngIf="content!==VehicleModel">{{content.abrv}}</span>
-                <input *ngIf="content===VehicleModel" [(ngModel)]="content.abrv"
+                <span *ngIf="content!==vehicleModel">{{content.abrv}}</span>
+                <input *ngIf="content===vehicleModel" [(ngModel)]="content.abrv"
                   (blur)="updateVehicleModel()" (keyup.enter)="updateVehicleModel()">
               </a></td>
           </ng-container>
-
-          <ng-container matColumnDef="makeid">
-              <th mat-sort-header="BrandId" class="mat-header-cell" *matHeaderCellDef> Brand Id </th>
-              <td mat-cell *matCellDef="let content"> {{content.makeid}} </td>
-            </ng-container>
   
           <ng-container matColumnDef="delete">
               <th mat-header-cell *matHeaderCellDef> Delete </th>
@@ -50,5 +40,5 @@
         </mat-paginator>
       
         
-        <p class="message" *ngIf="resultsMo">Deleted:{{resultsMo}} Object</p>
+        <p class="message" *ngIf="resultsVehicleModelDelete">Deleted:{{resultsVehicleModelDelete}} Object</p>
 

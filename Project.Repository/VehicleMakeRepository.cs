@@ -23,24 +23,24 @@ namespace Project.Repository
             _mapper = mapper;
         }
         protected CarsContext Context { get; private set; }
-        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
+        public async Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs)
         {
-                VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
+                VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehicleMakeArgs);
                 Context.VehicleMake.Add(vme);
                 return await Context.SaveChangesAsync();    
         }
-        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehiclemakeargs)
+        public async Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs)
         {
-                VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehiclemakeargs);
+                VehicleMakeEntity vme = _mapper.Map<VehicleMakeEntity>(vehicleMakeArgs);
                 Context.VehicleMake.Update(vme);
                 return await Context.SaveChangesAsync();
         }
         
-        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string sortOrder, int page, int itempp, string search)
+        public async Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel)
         {
                 var vm = from p in Context.VehicleMake select p;
 
-                switch (sortOrder)
+                switch (tableSortOrder)
                 {
                     case "Brand_desc":
                         vm = vm.OrderByDescending(m => m.Name);
@@ -64,13 +64,15 @@ namespace Project.Repository
                         break;
                 }
                 
-                if(search != "null"){
-                    vm = vm.Where(s => s.Name.ToLower().Contains(search.ToLower()) || s.Abrv.ToLower().Contains(search.ToLower()));
+                if(searchTabel != "null"){
+                    vm = vm.Where(s => s.Name.ToLower().Contains(searchTabel.ToLower()) || s.Abrv.ToLower().Contains(searchTabel.ToLower()));
                 }
 
-                vm = vm.Skip(itempp * page).Take(itempp);
+                vm = vm.Skip(itemsPerPage * pageIndex).Take(itemsPerPage);
 
-                return new List<IVehicleMakeModels>(_mapper.Map<List<VehicleMakeModels>>(await vm.ToListAsync()));
+
+                return new List<IVehicleMakeModels>(_mapper.Map<List<IVehicleMakeModels>>(await vm.ToListAsync()));
+
         }
         
         public async Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search){

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { VehicleMake } from './class.vehicle-make';
-import { VehicleModel } from './class.vehicle-model';
-import { Vehicle } from './class.vehicle';
+import { VehicleMake } from './vehicle-make.class';
+import { VehicleModel } from './vehicle-model.class';
+import { Vehicle } from './vehicle.class';
 import { DataService } from '../data.service';
 import { Router,ActivatedRoute } from '@angular/router';
-import { VehicleMakeModel, VehicleMakeResponse } from '../admin/interface.vehicle-make';
+import { VehicleMakeModel, VehicleMakeResponse } from '../admin/vehicle-make.interface';
 
 
 @Component({
@@ -14,14 +14,12 @@ import { VehicleMakeModel, VehicleMakeResponse } from '../admin/interface.vehicl
 })
 export class AddComponent implements OnInit {
 
-VehicleMakeArray: VehicleMakeModel[];
-
-VehicleMake = new VehicleMake("00000000-0000-0000-0000-000000000000",'What brand is it?', 'What is thier slogan?');
-VehicleModel = new VehicleModel("00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000",'What model?','What color does the car have?');
-Vehicle = new Vehicle(this.VehicleMake,this.VehicleModel);
-results;
+vehicleMakeArray: VehicleMakeModel[];
+vehicleMake = new VehicleMake('-1','','');
+vehicleModel = new VehicleModel('','','');
+vehicle = new Vehicle(this.vehicleMake,this.vehicleModel);
 public show:boolean = true;
- 
+
 constructor(private DataService: DataService,private route: ActivatedRoute,private router: Router) { }
 
 ngOnInit() {
@@ -31,7 +29,7 @@ ngOnInit() {
 getVehicles(): void {
   this.DataService.listVehicleMake(null,50,0,null)
     .subscribe(parts => {
-      this.VehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
+      this.vehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
         return <VehicleMakeModel>{
           id: response.id,
           name: response.name,
@@ -44,7 +42,7 @@ getVehicles(): void {
 
  
   toggle() {
-    if(this.Vehicle.VehicleMake.id === "00000000-0000-0000-0000-000000000000"){
+    if(this.vehicle.VehicleMake.id === "-1"){
       this.show = true;
     }else{
       this.show = false;
@@ -63,17 +61,17 @@ getVehicles(): void {
   }
  
   newCar() {  
-    if(this.Vehicle.VehicleMake.id === "00000000-0000-0000-0000-000000000000"){
-        this.DataService.addVehicle(this.Vehicle).subscribe((results) => {
-          this.results = results;
+    if(this.vehicle.VehicleMake.id === "-1"){
+        delete this.vehicle.VehicleMake.id;
+        delete this.vehicle.VehicleModel.makeid;
+        this.DataService.addVehicle(this.vehicle).subscribe(results => {
           this.router.navigate(['/admin/'],{ relativeTo: this.route });
-        });   
+        });
     }else{
-        this.VehicleModel.makeid = this.Vehicle.VehicleMake.id;
-        this.DataService.addVehicleModel(this.VehicleModel).subscribe((results) => {
-          this.results = results;
+        this.vehicleModel.makeid = this.vehicle.VehicleMake.id;
+        this.DataService.addVehicleModel(this.vehicleModel).subscribe(results => {
           this.router.navigate(['/admin/'],{ relativeTo: this.route });
-        });  
+        });
     }
  
 

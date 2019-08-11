@@ -20,8 +20,10 @@ namespace Project.Repository.Tests
         public VehicleMakeRepositoryTest(IVehicleMakeRepository repository)
         {
             this.Repository = repository;
+            
         }
         protected IVehicleMakeRepository Repository { get; private set; }
+        
 
         [Fact]
         public void GetAllVehicleMakeShuldreturnlist()
@@ -31,7 +33,7 @@ namespace Project.Repository.Tests
             //Task<List<IVehicleMakeModels>> expected = new Task<List<IVehicleMakeModels>>(,1);
 
             //Act
-            var actual = Repository.GetAllVehicleMakeAsync("null",0,1,"null");
+            //var actual = Repository.GetAllVehicleMakeAsync("null",0,1,"null");
            
             //Assert
             //Assert.Equal(expected, actual);
