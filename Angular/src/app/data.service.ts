@@ -43,8 +43,8 @@ export class DataService {
 
   
 
-  listVehicleMake(pageSort:string,pageSize: number, pageIndex: number, pageSearch: string): Observable<VehicleMake[]> {
-    return this.http.get<VehicleMake[]>(`/api/vehiclemake/list/${pageSort}&${pageIndex}&${pageSize}&${pageSearch}`);
+  listVehicleMake(pageSort:string,pageSize: number, pageIndex: number, pageSearch: string): Observable<VehicleMakeModel[]> {
+    return this.http.get<VehicleMakeModel[]>(`/api/vehiclemake/list/${pageSort}&${pageIndex}&${pageSize}&${pageSearch}`);
   }
   updateVehicleMake (vehicleMake: VehicleMakeModel): Observable<VehicleMakeModel> {
     return this.http.put<VehicleMakeModel>('/api/vehiclemake/update', vehicleMake);
@@ -59,8 +59,8 @@ export class DataService {
   addVehicleModel(vehicleModel: VehicleModel): Observable<VehicleModel> {
     return this.http.post<VehicleModel>('/api/vehiclemodel/add', vehicleModel);
   }
-  listVehicleModel(pageSort:string,pageSize: number, pageIndex: number, filter: string, pageSearch: string): Observable<VehicleModel[]> {
-    return this.http.get<VehicleModel[]>(`/api/vehiclemodel/list/${pageSort}&${filter}&${pageIndex}&${pageSize}&${pageSearch}`); 
+  listVehicleModel(pageSort:string,pageSize: number, pageIndex: number, filter: string, pageSearch: string): Observable<VehicleModelModel[]> {
+    return this.http.get<VehicleModelModel[]>(`/api/vehiclemodel/list/${pageSort}&${filter}&${pageIndex}&${pageSize}&${pageSearch}`); 
   }
   updateModel (vehicleModel: VehicleModelModel): Observable<VehicleModelModel> {
     return this.http.put<VehicleModelModel>('/api/vehiclemodel/update', vehicleModel);

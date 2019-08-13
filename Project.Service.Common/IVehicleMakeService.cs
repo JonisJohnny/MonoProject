@@ -12,7 +12,7 @@ namespace Project.Service.Common
         
         Task<int> AddToVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs);
         Task<int> UpdateVehicleMakeAsync(IVehicleMakeModels vehicleMakeArgs);
-        Task<List<IVehicleMakeModels>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel);
+        Task<IPagedCollection<IVehicleMakeModels>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel);
         Task<IVehicleMakeModels> GetOneItemVehicleMakeAsync(string search);
         Task<int> RemoveFromVehicleMakeAsync(Guid id);
     }

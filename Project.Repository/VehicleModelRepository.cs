@@ -39,7 +39,7 @@ namespace Project.Repository
         }
     
 
-        public async Task<List<IVehicleModelModels>> GetAllVehicleModelAsync(string tableSortOrder, string filterTableFromBrand, int pageIndex, int itemsPerPage, string searchTable)
+        public async Task<IPagedCollection<IVehicleModelModels>> GetAllVehicleModelAsync(string tableSortOrder, string filterTableFromBrand, int pageIndex, int itemsPerPage, string searchTable)
         {
                 var vm = from p in Context.VehicleModel select p;
 
@@ -83,10 +83,12 @@ namespace Project.Repository
                     vm = vm.Where(s => s.Name.ToLower().Contains(searchTable.ToLower()) || s.Abrv.ToLower().Contains(searchTable.ToLower()));
                 }
                 
+                
+                PagedCollection<IVehicleModelModels> PC = new PagedCollection<IVehicleModelModels>();
+                PC.TotalRecords = await vm.CountAsync();
                 vm = vm.Skip(itemsPerPage * pageIndex).Take(itemsPerPage);
-
-                return new List<IVehicleModelModels>(_mapper.Map<List<IVehicleModelModels>>(await vm.ToListAsync()));
-
+                PC.Items = _mapper.Map<List<VehicleModelModels>>(await vm.ToListAsync());
+                return _mapper.Map<IPagedCollection<IVehicleModelModels>>(PC);
         }
         
         public async Task<IVehicleModelModels> GetOneItemVehicleModelAsync(string search){

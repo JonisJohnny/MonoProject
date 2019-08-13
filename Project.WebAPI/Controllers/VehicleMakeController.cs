@@ -40,9 +40,9 @@ namespace Project.WebAPI.Controllers
         }
         [HttpGet]
         [Route("list/{tableSortOrder}&{pageIndex}&{itemsPerPage}&{searchTabel}")]
-        public async Task<List<VehicleMakeView>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel)
+        public async Task<IPagedCollection<VehicleMakeREST>> GetAllVehicleMakeAsync(string tableSortOrder, int pageIndex, int itemsPerPage, string searchTabel)
         {
-            return _mapper.Map<List<VehicleMakeView>>(await Service.GetAllVehicleMakeAsync(tableSortOrder,pageIndex,itemsPerPage,searchTabel));
+            return _mapper.Map<IPagedCollection<VehicleMakeREST>>(await Service.GetAllVehicleMakeAsync(tableSortOrder,pageIndex,itemsPerPage,searchTabel));
         }
         [HttpGet]
         [Route("item/{search}")]

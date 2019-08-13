@@ -4,7 +4,7 @@ import { VehicleModel } from './vehicle-model.class';
 import { Vehicle } from './vehicle.class';
 import { DataService } from '../data.service';
 import { Router,ActivatedRoute } from '@angular/router';
-import { VehicleMakeModel, VehicleMakeResponse } from '../admin/vehicle-make.interface';
+import { VehicleMakeModel } from '../admin/vehicle-make.interface';
 
 
 @Component({
@@ -26,16 +26,10 @@ ngOnInit() {
  this.getVehicles();
 }
 
-getVehicles(): void {
+getVehicles() {
   this.DataService.listVehicleMake(null,50,0,null)
-    .subscribe(parts => {
-      this.vehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
-        return <VehicleMakeModel>{
-          id: response.id,
-          name: response.name,
-          abrv: response.abrv
-        };
-      });
+    .subscribe(model => {
+      this.vehicleMakeArray = model['items'];
 
   })
 }

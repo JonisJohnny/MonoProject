@@ -33,7 +33,7 @@
           
         </table>
 
-        <mat-paginator [length]="10"
+        <mat-paginator [length]="totalRecords"
         [pageSize]="paginationDetailMo.value.pageSize"
         [pageSizeOptions]="pageSizeOptions"
         (page)="paginationOptionsRefreshVehicleModel($event)">

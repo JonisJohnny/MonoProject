@@ -2,7 +2,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleModelModel, VehicleModelResponse } from '../vehicle-model.interface';
+import { VehicleModelModel } from '../vehicle-model.interface';
 
 
  
@@ -17,6 +17,7 @@ export class AdminVehicleModelComponent implements OnInit {
 
 vehicleModelArray: VehicleModelModel[];
 vehicleModel: VehicleModelModel;
+totalRecords:number;
 resultsVehicleModelDelete: any;
 
 filterModelTabel:string;
@@ -48,17 +49,11 @@ displayedColumnsModel: string[] = ['name', 'abrv', 'delete'];
 
   
 
-  getVehicles(): void {
+  getVehicles() {
     this.DataService.listVehicleModel(this.pageSortTableVehicleModel,this.paginationDetailMo.value.pageSize,this.paginationDetailMo.value.pageIndex,this.filterModelTabel,this.search)
-      .subscribe(parts => {
-        this.vehicleModelArray = parts.map((response: VehicleModelResponse) => {
-          return <VehicleModelModel>{
-            id: response.id,
-            name: response.name,
-            abrv: response.abrv,
-          };
-        });
-
+      .subscribe(model => {
+        this.vehicleModelArray = model['items'];
+        this.totalRecords = model['totalRecords'];
     })
   }
 

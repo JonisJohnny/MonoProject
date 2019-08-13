@@ -51,7 +51,7 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumnsMake;"></tr>
       </table>
       
-      <mat-paginator [length]="10"
+      <mat-paginator [length]="totalRecords"
               [pageSize]="paginationDetailMa.value.pageSize"
               [pageSizeOptions]="pageSizeOptions"
               (page)="paginationOptionsRefreshVehicleMake($event)">

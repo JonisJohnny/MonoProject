@@ -2,7 +2,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { VehicleMakeModel, VehicleMakeResponse } from '../vehicle-make.interface';
+import { VehicleMakeModel } from '../vehicle-make.interface';
 
 
 @Component({
@@ -12,9 +12,10 @@ import { VehicleMakeModel, VehicleMakeResponse } from '../vehicle-make.interface
 })
 export class AdminVehicleMakeComponent implements OnInit {
 
-
 vehicleMakeArray: VehicleMakeModel[];
 vehicleMake: VehicleMakeModel;
+totalRecords:number;
+
 resultsVehicleMakeDelete: any;
 filterModelTabel:string;
 search:string;
@@ -39,26 +40,21 @@ displayedColumnsMake: string[] = ['select', 'name', 'abrv', 'delete'];
   constructor(private DataService:DataService) { }
    
   ngOnInit() {
+  
     this.DataService.filterModelTabelFunc.subscribe(filter => this.filterModelTabel = filter);
     this.DataService.search.subscribe(search => {this.search = search; this.getVehicles();});
-
+    
   } 
 
 
 
 
-  getVehicles(): void {
+  getVehicles() {
     this.DataService.listVehicleMake(this.pageSortTableVehicleMake,this.paginationDetailMa.value.pageSize,this.paginationDetailMa.value.pageIndex,this.search)
-      .subscribe(parts => {
-        this.vehicleMakeArray = parts.map((response: VehicleMakeResponse) => {
-          return <VehicleMakeModel>{
-            id: response.id,
-            name: response.name,
-            abrv: response.abrv
-          };
-        });
-
-    })
+      .subscribe(model => { 
+        this.vehicleMakeArray = model['items'];
+        this.totalRecords = model['totalRecords'];
+    });
   }
   
 
